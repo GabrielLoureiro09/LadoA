@@ -1,0 +1,199 @@
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
+}
+
+#header-title {
+    left: 107px; top: 58px; position: absolute; color: white; font-size: 25px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#searchbar {
+    width: 740px; height: 55px; left: 282px; top: 47px; position: absolute; background: white;
+}
+
+#searchbar-title {
+    width: 313px; height: 21px; left: 302px; top: 63px; position: absolute; color: rgba(0, 0, 0, 0.37); font-size: 20px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#line {
+    width: 40px; height: 0px; left: 950px; top: 55px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px rgba(0, 0, 0, 0.37) solid; outline-offset: -0.50px;
+}
+
+#header-entrar {
+    width: 41px; height: 15px; left: 1250px; top: 66px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#header-criar {
+    width: 115px; height: 15px; left: 1087px; top: 66px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#header-disc {
+    width: 30.83px; height: 30.83px; left: 67.08px; top: 57.08px; position: absolute;
+}
+
+#header-cart {
+    width: 20px; height: 20px; left: 1339px; top: 65.5px; position: absolute;
+}
+
+#searchbar-zoom {
+    width: 17.50px; height: 17.50px; left: 979px; top: 66px; position: absolute;
+}
+
+#navebar-limit {
+    width: 100%; height: 470px; left: 0px; top: 150px; position: absolute; overflow: hidden;
+}
+
+#navebar-img {
+    width: 100%; left: 0px; top: -174px; position: absolute;
+}
+
+#navebar {
+    width: 100%; height: 140px; left: 0px; top: 619px; position: absolute; background: #3C0909;
+}
+
+#navebar-text {
+    left: 77px; top: 667px; position: absolute; color: white; font-size: 35px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#price {
+    color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 700; word-wrap: break-word;
+}
+
+#or {
+    color: black; font-size: 35px; font-family: Koh Santepheap; font-weight: 300; word-wrap: break-word;
+}
+
+#parcel {
+    color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 700; word-wrap: break-word;
+}
+
+#layer-card-1 {
+    width: 561px; height: 763px; left: 77px; top: 833px; position: absolute; background: #E7E7E7; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); border-radius: 10px;
+}
+
+#title-card-1 {
+    width: 406px; height: 44px; left: 125px; top: 1291px; position: absolute; text-align: center; color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 900; word-wrap: break-word;
+}
+
+#price-card-1 {
+    width: 466px; height: 44px; left: 125px; top: 1383px; position: absolute;
+}
+
+#overlayer-card-1 {
+    width: 561px; height: 438px; left: 77px; top: 833px; position: absolute; background: white; border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+#image-card-1 {
+    width: 424px; height: 424px; left: 156px; top: 857px; position: absolute;
+}
+
+#subtitle-card-1 {
+    width: 120px; height: 24px; left: 125px; top: 1326px; position: absolute; color: #3B3A3A; font-size: 20px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word;
+}
+
+#button-card-1 {
+    width: 205px; height: 84px; left: 255px; top: 1462px; position: absolute; background: #3C0909; border-radius: 10px;
+}
+
+#text-button-card-1 {
+    width: 126px; height: 30px; left: 295px; top: 1485px; position: absolute; color: white; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+#layer-card-2 {
+    width: 561px; height: 763px; left: 795px; top: 833px; position: absolute; background: #E7E7E7; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); border-radius: 10px;
+}
+
+#button-card-2 {
+    width: 205px; height: 84px; left: 973px; top: 1462px; position: absolute; background: #3C0909; border-radius: 10px;
+}
+
+#text-button-card-2 {
+    width: 126px; height: 30px; left: 1013px; top: 1485px; position: absolute; color: white; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+#title-card-2 {
+    width: 426px; height: 44px; left: 843px; top: 1291px; position: absolute; text-align: center; color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 900; word-wrap: break-word;
+}
+
+#price-card-2 {
+    width: 466px; height: 44px; left: 843px; top: 1383px; position: absolute
+}
+
+#subtitle-card-2 {
+    width: 120px; height: 24px; left: 843px; top: 1326px; position: absolute; color: #3B3A3A; font-size: 20px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word;
+}
+
+#overlayer-card-2 {
+    width: 561px; height: 438px; left: 795px; top: 833px; position: absolute; background: white; border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+#image-card-2 {
+    width: 438px; height: 438px; left: 856px; top: 833px; position: absolute;
+}
+
+#layer-card-3 {
+    width: 564px; height: 765px; left: 77px; top: 1672px; position: absolute; background: #E7E7E7; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); border-radius: 10px;
+}
+
+#title-card-3 {
+    width: 318px; height: 37px; left: 125px; top: 2127px; position: absolute; text-align: center; color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 900; word-wrap: break-word;
+}
+
+#price-card-3 {
+    width: 469px; height: 45px; left: 125px; top: 2215px; position: absolute;
+}
+
+#overlayer-card-3 {
+    width: 564px; height: 439px; left: 77px; top: 1672px; position: absolute; background: white; border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+#button-card-3 {
+    width: 206.10px; height: 84.22px; left: 255.95px; top: 2302.65px; position: absolute; background: #3C0909; border-radius: 10px;
+}
+
+#text-button-card-3 {
+    width: 126.67px; height: 30.08px; left: 296.17px; top: 2325.71px; position: absolute; color: white; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+#subtitle-card-3 {
+    width: 120px; height: 24px; left: 127px; top: 2162px; position: absolute; color: #3B3A3A; font-size: 20px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word;
+}
+
+#image-card-3 {
+    width: 426px; height: 426px; left: 147px; top: 1685px; position: absolute;
+}
+
+#layer-card-4 {
+    width: 564px; height: 765px; left: 795px; top: 1672px; position: absolute; background: #E7E7E7; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); border-radius: 10px;
+}
+
+#title-card-4 {
+    width: 448px; height: 37px; left: 843px; top: 2127px; position: absolute; text-align: center; color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 900; word-wrap: break-word;
+}
+
+#price-card-4 {
+    width: 469px; height: 45px; left: 843px; top: 2215px; position: absolute;
+}
+
+#overlayer-card-4 {
+    width: 564px; height: 439px; left: 795px; top: 1672px; position: absolute; background: white; border-top-left-radius: 10px; border-top-right-radius: 10px;
+}
+
+#button-card-4 {
+    width: 206.10px; height: 84.22px; left: 973.95px; top: 2302.65px; position: absolute; background: #3C0909; border-radius: 10px;
+}
+
+#text-button-card-4 {
+    width: 126.67px; height: 30.08px; left: 1014.17px; top: 2325.71px; position: absolute; color: white; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+#subtitle-card-4 {
+    width: 120px; height: 24px; left: 845px; top: 2162px; position: absolute; color: #3B3A3A; font-size: 20px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word;
+}
+
+#image-card-4 {
+    width: 451px; height: 451px; left: 852px; top: 1676px; position: absolute;
+}

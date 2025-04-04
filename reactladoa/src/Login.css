@@ -1,0 +1,367 @@
+body {
+    background-color: white;
+  }
+  
+  header {
+    width: 100%;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #3c0909;
+  }
+  
+  #header-title {
+    left: 107px;
+    top: 58px;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #searchbar {
+    width: 740px;
+    height: 55px;
+    left: 282px;
+    top: 47px;
+    position: absolute;
+    background: white;
+  }
+  
+  #searchbar-title {
+    width: 313px;
+    height: 21px;
+    left: 302px;
+    top: 63px;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.37);
+    font-size: 20px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #line {
+    width: 40px;
+    height: 0px;
+    left: 950px;
+    top: 55px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    outline: 1px rgba(0, 0, 0, 0.37) solid;
+    outline-offset: -0.5px;
+  }
+  
+  #header-entrar {
+    width: 41px;
+    height: 15px;
+    left: 1250px;
+    top: 66px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #header-criar {
+    width: 115px;
+    height: 15px;
+    left: 1087px;
+    top: 66px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #header-disc {
+    width: 30.83px;
+    height: 30.83px;
+    left: 67.08px;
+    top: 57.08px;
+    position: absolute;
+  }
+  
+  #header-cart {
+    width: 20px;
+    height: 20px;
+    left: 1339px;
+    top: 65.5px;
+    position: absolute;
+  }
+  
+  #searchbar-zoom {
+    width: 17.5px;
+    height: 17.5px;
+    left: 979px;
+    top: 66px;
+    position: absolute;
+  }
+  
+  #navebar {
+    width: 100%;
+    height: 140px;
+    left: 0px;
+    top: 240px;
+    position: absolute;
+    background: #3c0909;
+  }
+  
+  #navebar-text {
+    left: 77px;
+    top: 290px;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #navebar-limit {
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 150px;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  #navebar-img {
+    width: 100%;
+    left: 0px;
+    top: -390px;
+    position: absolute;
+  }
+  
+  #container {
+    width: 882px;
+    height: 528px;
+    left: 279px;
+    top: 427px;
+    position: absolute;
+    background: #e7e7e7;
+    border-radius: 52px;
+  }
+  
+  #texto-email {
+    width: 425px;
+    height: 44px;
+    left: 540px;
+    top: 477px;
+    position: absolute;
+    color: #3c0909;
+    font-size: 35px;
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  #input-container {
+    width: 576px;
+    height: 80px;
+    left: 438px;
+    top: 547px;
+    position: absolute;
+    background: #e7e7e7;
+    border-radius: 9px;
+  }
+  
+  #email-box {
+    width: 758px;
+    height: 100px;
+    left: 334px;
+    top: 577px;
+    position: absolute;
+  }
+  
+  #email-background {
+    width: 758px;
+    height: 100px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  #email-icon {
+    width: 70px;
+    height: 70px;
+    left: 43px;
+    top: 15px;
+    position: absolute;
+    background: rgba(217, 217, 217, 0);
+    border-radius: 9999px;
+    border: 1px rgba(0, 0, 0, 0.37) solid;
+  }
+  
+  #email-img {
+    width: 40.05px;
+    height: 32px;
+    left: 59.15px;
+    top: 35px;
+    position: absolute;
+  }
+  
+  #email-text {
+    width: 564px;
+    height: 68px;
+    left: 138px;
+    top: 17px;
+    position: absolute;
+    background: #e7e7e7;
+    border-color: white;
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 30px;
+    color: #3c0909;
+  }
+  
+  #email-label {
+    width: 135px;
+    height: 16px;
+    left: 140px;
+    position: absolute;
+    color: rgba(60, 8.97, 8.97, 0.6);
+    font-size: 17px;
+    font-family: Inria Serif;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  #cadastro-text {
+    width: 196px;
+    height: 15px;
+    left: 504px;
+    top: 980px;
+    position: absolute;
+    color: #3c0909;
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  #cadastro-link {
+    width: 230px;
+    height: 69px;
+    left: 706px;
+    top: 955px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 255, 0.8);
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    text-decoration: underline;
+    word-wrap: break-word;
+  }
+  
+  #senha-box {
+    width: 758px;
+    height: 121px;
+    left: 334px;
+    top: 709px;
+    position: absolute;
+  }
+  
+  #senha-background {
+    width: 758px;
+    height: 100px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  #senha-icon {
+    width: 70px;
+    height: 70px;
+    left: 43px;
+    top: 15px;
+    position: absolute;
+    background: rgba(217, 217, 217, 0);
+    border-radius: 9999px;
+    border: 1px rgba(0, 0, 0, 0.37) solid;
+  }
+  
+  #senha-text {
+    width: 564px;
+    height: 68px;
+    left: 138px;
+    top: 17px;
+    position: absolute;
+    background: #e7e7e7;
+    border-color: white;
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 30px;
+    color: #3c0909;
+  }
+  
+  #senha-label {
+    width: 135px;
+    height: 16px;
+    left: 140px;
+    position: absolute;
+    color: rgba(60, 8.97, 8.97, 0.6);
+    font-size: 17px;
+    font-family: Inria Serif;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  #senha-img {
+    width: 29.04px;
+    height: 38px;
+    left: 65px;
+    top: 31px;
+    position: absolute;
+  }
+  
+  #botao-login {
+    width: 206px;
+    height: 74px;
+    left: 617px;
+    top: 856px;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-family: Inria Serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    background: #3c0909;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #email-text::placeholder {
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 30px;
+    position: absolute;
+    bottom: 18px;
+  }
+  
+  #senha-text::placeholder {
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 30px;
+    position: absolute;
+    bottom: 18px;
+  }
+  

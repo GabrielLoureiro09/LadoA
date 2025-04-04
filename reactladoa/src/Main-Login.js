@@ -1,42 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lado A</title>
-    <link rel="stylesheet" href="main-login.css">
-</head>
-<body>
-    <header>
-        <div id="header-title">Lado A</div>
-        <div id="searchbar"></div>
-        <div id="searchbar-title">Buscar seus vinis favoritos...</div>
-        <div id="line"></div>
-        <img id="header-perfil" src="./img/perfil.png">
-        <div id="header-criar">Olá, RAFAEL DA CRUZ</div>
-        <img id="header-disc" src="./img/disco.png"></img>
-        <img id="header-cart" src="./img/carrinho.png"></img>
-        <img id="searchbar-zoom" src="./img/lupa.png"></img>
-    </header>
-    <div id="navebar-limit">
-        <img id="navebar-img" src="./img/vinil.webp"/>
-    </div>
-    <div id="navebar"></div>
-    <div id= "navebar-text">Principais Produtos:</div>
-    <div id="card-1">
-        <div id="layer-card-1"></div>
-        <div id="title-card-1">Swimming - Mac Miller</div>
-        <div id="price-card-1">
+import React, { useRef } from 'react';
+import './Main-Login.css'; 
+
+function Header() {
+    return (
+        <header>
+            <div id="header-title">Lado A</div>
+            <div id="searchbar"></div>
+            <div id="searchbar-title">Buscar seus vinis favoritos...</div>
+            <div id="line"></div>
+            <img id="header-perfil" src="./img/perfil.png"></img>
+            <div id="header-criar">Olá, RAFAEL DA CRUZ</div>
+            <img id="header-disc" src="./img/disco.png"></img>
+            <img id="header-cart" src="./img/carrinho.png"></img>
+            <img id="searchbar-zoom" src="./img/lupa.png"></img>
+        </header>
+    );
+}
+
+function Navebar() {
+    return (
+        <div>
+            <div id="navebar-limit">
+                <img id="navebar-img" src="./img/vinil.webp"/>
+            </div>
+            <div id="navebar"></div>
+            <div id= "navebar-text">Principais Produtos:</div>
+        </div>
+    );
+}
+
+function Card() {
+    <div id="card">
+        <div id="layer-card"></div>
+        <div id="title-card">Swimming - Mac Miller</div>
+        <div id="price-card">
             <span id="price">R$ 319,99 </span>
             <span id="or">ou</span>
             <span id="parcel"> 12x de R$ 31,99</span></div>
-        <div id="overlayer-card-1"></div>
-        <img id="image-card-1" src="./img/swimming-macmiller.png" />
-        <div id="subtitle-card-1">Disco de Vinil</div>
-        <div id="button-card-1"></div>
-        <div id="text-button-card-1">Comprar</div>
+        <div id="overlayer-card"></div>
+        <img id="image-card" src="./img/swimming-macmiller.png" />
+        <div id="subtitle-card">Disco de Vinil</div>
+        <div id="button-card"></div>
+        <div id="text-button-card">Comprar</div>
     </div>
-    <div id="card-2">
+}
+
+export default function MainLogin() {    
+    return (
+        <div>
+            <Header />
+            <Navebar />
+            <Card />
+        </div>
+    );
+}
+
+    {/* <div id="card-2">
         <div id="layer-card-2"></div>
         <div id="button-card-2"></div>
         <div id="text-button-card-2">Comprar</div>
@@ -77,6 +96,4 @@
         <div id="text-button-card-4">Comprar</div>
         <div id="subtitle-card-4">Disco de Vinil</div>
         <img id="image-card-4" src="./img/damn-kendrick-lamar.png" />
-    </div>
-</body>
-</html>
+    </div> */}

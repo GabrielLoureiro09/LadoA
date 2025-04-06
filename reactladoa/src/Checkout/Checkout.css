@@ -1,0 +1,219 @@
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
+}
+
+#header-title-checkout {
+    left: 107px; top: 58px; position: absolute; color: white; font-size: 25px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#searchbar-checkout {
+    width: 740px; height: 55px; left: 282px; top: 47px; position: absolute; background: white;
+}
+
+#searchbar-title-checkout {
+    width: 313px; height: 21px; left: 302px; top: 63px; position: absolute; color: rgba(0, 0, 0, 0.37); font-size: 20px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#line-checkout {
+    width: 40px; height: 0px; left: 950px; top: 55px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px rgba(0, 0, 0, 0.37) solid; outline-offset: -0.50px;
+}
+
+#header-perfil-checkout {
+    width: 36px; height: 36px; left: 1070px; top: 57.5px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400;
+}
+
+#header-criar-checkout {
+    width: 200px; height: 15px; left: 1120px; top: 66px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#header-disc-checkout {
+    width: 30.83px; height: 30.83px; left: 67.08px; top: 57.08px; position: absolute;
+}
+
+#header-cart-checkout {
+    width: 20px; height: 20px; left: 1339px; top: 65.5px; position: absolute;
+}
+
+#searchbar-zoom-checkout {
+    width: 17.50px; height: 17.50px; left: 979px; top: 66px; position: absolute;
+}
+/* Container principal do checkout */
+.checkout-container {
+    padding: 200px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Parte de cima (imagem e informações lado a lado) */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* <- faz com que a altura da imagem se iguale às informações */
+    flex-wrap: wrap;
+    gap: 40px;
+    min-height: 600px; /* controla a altura mínima */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* Imagem */
+.product-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 500px;
+    max-width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    margin-left: 80px;
+}
+
+/* Informações */
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    padding: 20px;
+}
+
+/* Removido espaço entre título e subtítulo */
+.album-title,
+.subtitle {
+    margin: 0;
+    padding: 0;
+    padding-left: 75px;
+    align-self: self-start;
+}
+
+.album-title {
+    font-family: Koh Santepheap;
+    font-size: 40px;
+    font-weight: 900;
+    color: #3C0909;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Inria Serif;
+    font-size: 25px;
+    color: #3B3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Removido espaço entre preço e parcelas */
+.price,
+.installments {
+    margin: 0;
+    padding: 0;
+}
+
+.price {
+    font-family: Koh Santepheap;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3C0909;
+    text-align: center;
+}
+
+.installments {
+    font-family: Koh Santepheap;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3C0909;
+    text-align: center;
+}
+
+.stock,
+.shipping {
+    font-family: Koh Santepheap;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3C0909;
+    text-align: center;
+}
+
+.buy-button {
+    width: 400px;
+    height: 74px;
+    margin-top: 40px;
+    background: #3C0909;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    color: white;
+    font-size: 30px;
+    font-family: Inria Serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    padding: 19px 42px;
+}
+
+/* Parte de baixo (descrição + músicas) */
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.description {
+    font-family: Koh Santepheap;
+    font-size: 30px;
+    color: #3C0909;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.description strong {
+    font-family: Koh Santepheap;
+    font-size: 35px;
+    color: #3C0909;
+}
+
+.description p {
+    font-family: Koh Santepheap;
+    font-size: 30px;
+    font-weight: 300;
+    color: #3C0909;
+    line-height: 1.6;
+}
+
+.musics strong {
+    font-family: Koh Santepheap;
+    font-size: 35px;
+    color: #3C0909;
+}
+
+.musics p {
+    font-family: Koh Santepheap;
+    font-size: 30px;
+    font-weight: 300;
+    color: #3C0909;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        width: 80%;
+        height: auto;
+    }
+}

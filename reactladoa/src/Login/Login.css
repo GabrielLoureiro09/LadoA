@@ -11,7 +11,7 @@ body {
     background: #3c0909;
   }
   
-  #header-title {
+  #header-title-login {
     left: 107px;
     top: 58px;
     position: absolute;
@@ -22,7 +22,7 @@ body {
     word-wrap: break-word;
   }
   
-  #searchbar {
+  #searchbar-login {
     width: 740px;
     height: 55px;
     left: 282px;
@@ -31,7 +31,7 @@ body {
     background: white;
   }
   
-  #searchbar-title {
+  #searchbar-title-login {
     width: 313px;
     height: 21px;
     left: 302px;
@@ -44,7 +44,7 @@ body {
     word-wrap: break-word;
   }
   
-  #line {
+  #line-login {
     width: 40px;
     height: 0px;
     left: 950px;
@@ -56,7 +56,7 @@ body {
     outline-offset: -0.5px;
   }
   
-  #header-entrar {
+  #header-entrar-login {
     width: 41px;
     height: 15px;
     left: 1250px;
@@ -69,7 +69,7 @@ body {
     word-wrap: break-word;
   }
   
-  #header-criar {
+  #header-criar-login {
     width: 115px;
     height: 15px;
     left: 1087px;
@@ -82,7 +82,7 @@ body {
     word-wrap: break-word;
   }
   
-  #header-disc {
+  #header-disc-login {
     width: 30.83px;
     height: 30.83px;
     left: 67.08px;
@@ -90,7 +90,7 @@ body {
     position: absolute;
   }
   
-  #header-cart {
+  #header-cart-login {
     width: 20px;
     height: 20px;
     left: 1339px;
@@ -98,7 +98,7 @@ body {
     position: absolute;
   }
   
-  #searchbar-zoom {
+  #searchbar-zoom-login {
     width: 17.5px;
     height: 17.5px;
     left: 979px;
@@ -106,7 +106,7 @@ body {
     position: absolute;
   }
   
-  #navebar {
+  #navebar-login {
     width: 100%;
     height: 140px;
     left: 0px;
@@ -115,7 +115,7 @@ body {
     background: #3c0909;
   }
   
-  #navebar-text {
+  #navebar-text-login {
     left: 77px;
     top: 290px;
     position: absolute;
@@ -126,7 +126,7 @@ body {
     word-wrap: break-word;
   }
   
-  #navebar-limit {
+  #navebar-limit-login {
     width: 100%;
     height: 90px;
     left: 0px;
@@ -135,28 +135,28 @@ body {
     overflow: hidden;
   }
   
-  #navebar-img {
+  #navebar-img-login {
     width: 100%;
     left: 0px;
     top: -390px;
     position: absolute;
   }
   
-  #container {
+  #container-login {
     width: 882px;
     height: 528px;
-    left: 279px;
+    left: 310px;
     top: 427px;
     position: absolute;
-    background: #e7e7e7;
+    background: whitesmoke;
     border-radius: 52px;
   }
   
-  #texto-email {
+  #texto-email-login {
     width: 425px;
     height: 44px;
-    left: 540px;
-    top: 477px;
+    left: 570px;
+    top: 480px;
     position: absolute;
     color: #3c0909;
     font-size: 35px;
@@ -165,7 +165,7 @@ body {
     word-wrap: break-word;
   }
   
-  #input-container {
+  #input-container-login {
     width: 576px;
     height: 80px;
     left: 438px;
@@ -175,15 +175,15 @@ body {
     border-radius: 9px;
   }
   
-  #email-box {
+  #email-box-login {
     width: 758px;
     height: 100px;
-    left: 334px;
+    left: 372px;
     top: 577px;
     position: absolute;
   }
   
-  #email-background {
+  #email-background-login {
     width: 758px;
     height: 100px;
     position: absolute;
@@ -192,7 +192,7 @@ body {
     border-radius: 10px;
   }
   
-  #email-icon {
+  #email-icon-login {
     width: 70px;
     height: 70px;
     left: 43px;
@@ -203,7 +203,7 @@ body {
     border: 1px rgba(0, 0, 0, 0.37) solid;
   }
   
-  #email-img {
+  #email-img-login {
     width: 40.05px;
     height: 32px;
     left: 59.15px;
@@ -211,14 +211,14 @@ body {
     position: absolute;
   }
   
-  #email-text {
+  #email-text-login {
     width: 564px;
     height: 68px;
     left: 138px;
     top: 17px;
     position: absolute;
     background: #e7e7e7;
-    border-color: white;
+    border: 0;
     font-family: Koh Santepheap;
     font-weight: 700;
     word-wrap: break-word;
@@ -226,7 +226,7 @@ body {
     color: #3c0909;
   }
   
-  #email-label {
+  #email-label-login {
     width: 135px;
     height: 16px;
     left: 140px;
@@ -237,8 +237,19 @@ body {
     font-weight: 700;
     word-wrap: break-word;
   }
+
+  #email-icon-login {
+    width: 70px;
+    height: 70px;
+    left: 43px;
+    top: 15px;
+    position: absolute;
+    background: rgba(217, 217, 217, 0);
+    border-radius: 9999px;
+    border: 1px rgba(0, 0, 0, 0.37) solid;
+  }
   
-  #cadastro-text {
+  #cadastro-text-login {
     width: 196px;
     height: 15px;
     left: 504px;
@@ -251,7 +262,7 @@ body {
     word-wrap: break-word;
   }
   
-  #cadastro-link {
+  #cadastro-link-login {
     width: 230px;
     height: 69px;
     left: 706px;
@@ -268,15 +279,15 @@ body {
     word-wrap: break-word;
   }
   
-  #senha-box {
+  #senha-box-login {
     width: 758px;
     height: 121px;
-    left: 334px;
+    left: 372px;
     top: 709px;
     position: absolute;
   }
   
-  #senha-background {
+  #senha-background-login {
     width: 758px;
     height: 100px;
     position: absolute;
@@ -285,7 +296,7 @@ body {
     border-radius: 10px;
   }
   
-  #senha-icon {
+  #senha-icon-login {
     width: 70px;
     height: 70px;
     left: 43px;
@@ -296,14 +307,14 @@ body {
     border: 1px rgba(0, 0, 0, 0.37) solid;
   }
   
-  #senha-text {
+  #senha-text-login {
     width: 564px;
     height: 68px;
     left: 138px;
     top: 17px;
     position: absolute;
     background: #e7e7e7;
-    border-color: white;
+    border: 0;
     font-family: Koh Santepheap;
     font-weight: 700;
     word-wrap: break-word;
@@ -311,7 +322,7 @@ body {
     color: #3c0909;
   }
   
-  #senha-label {
+  #senha-label-login {
     width: 135px;
     height: 16px;
     left: 140px;
@@ -323,7 +334,7 @@ body {
     word-wrap: break-word;
   }
   
-  #senha-img {
+  #senha-img-login {
     width: 29.04px;
     height: 38px;
     left: 65px;
@@ -334,7 +345,7 @@ body {
   #botao-login {
     width: 206px;
     height: 74px;
-    left: 617px;
+    left: 647px;
     top: 856px;
     position: absolute;
     color: white;
@@ -347,21 +358,22 @@ body {
     cursor: pointer;
   }
   
-  #email-text::placeholder {
+  #email-text-login::placeholder {
     font-family: Koh Santepheap;
     font-weight: 700;
     word-wrap: break-word;
     font-size: 30px;
     position: absolute;
     bottom: 18px;
+    border: 0;
   }
   
-  #senha-text::placeholder {
+  #senha-text-login::placeholder {
     font-family: Koh Santepheap;
     font-weight: 700;
     word-wrap: break-word;
     font-size: 30px;
     position: absolute;
-    bottom: 18px;
+    bottom: 14px;
   }
   

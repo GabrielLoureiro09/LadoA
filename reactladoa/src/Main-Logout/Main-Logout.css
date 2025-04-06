@@ -1,0 +1,181 @@
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
+}
+
+#header-title-mainlogout {
+    left: 107px; top: 58px; position: absolute; color: white; font-size: 25px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#searchbar-mainlogout {
+    width: 740px; height: 55px; left: 282px; top: 47px; position: absolute; background: white;
+}
+
+#searchbar-title-mainlogout {
+    width: 313px; height: 21px; left: 302px; top: 63px; position: absolute; color: rgba(0, 0, 0, 0.37); font-size: 20px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#line-mainlogout {
+    width: 40px; height: 0px; left: 950px; top: 55px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px rgba(0, 0, 0, 0.37) solid; outline-offset: -0.50px;
+}
+
+#header-perfil-mainlogout {
+    width: 36px; height: 36px; left: 1070px; top: 57.5px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400;
+}
+
+#header-criar-mainlogout {
+    width: 200px; height: 15px; left: 1120px; top: 66px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+}
+
+#header-disc-mainlogout {
+    width: 30.83px; height: 30.83px; left: 67.08px; top: 57.08px; position: absolute;
+}
+
+#header-cart-mainlogout {
+    width: 20px; height: 20px; left: 1339px; top: 65.5px; position: absolute;
+}
+
+#searchbar-zoom-mainlogout {
+    width: 17.50px; height: 17.50px; left: 979px; top: 66px; position: absolute;
+}
+
+#navebar-limit-mainlogout {
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 150px;
+    position: absolute;
+    overflow: hidden;
+}
+  
+#navebar-img-mainlogout {
+    width: 100%;
+    left: 0px;
+    top: -390px;
+    position: absolute;
+}
+
+#navebar-mainlogout {
+    width: 100%;
+    height: 140px;
+    left: 0px;
+    top: 240px;
+    position: absolute;
+    background: #3c0909;
+}
+  
+#navebar-text-mainlogout {
+    left: 77px;
+    top: 290px;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#price-mainlogout {
+    color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 700; word-wrap: break-word;
+}
+
+#or-mainlogout {
+    color: black; font-size: 35px; font-family: Koh Santepheap; font-weight: 300; word-wrap: break-word;
+}
+
+#parcel-mainlogout {
+    color: #3C0909; font-size: 35px; font-family: Koh Santepheap; font-weight: 700; word-wrap: break-word;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 150px;
+    row-gap: 50px;
+    padding: 60px 20px;
+    margin-top: 400px;
+}
+
+#card-mainlogout {
+    background: #E7E7E7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+    width: 550px;
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#overlayer-card-mainlogout {
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 450px;
+    width: 100%;
+}
+
+#image-card-mainlogout {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: -420px;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+}   
+
+#title-card-mainlogout {
+    color: #3C0909;
+    font-size: 35px;
+    font-family: Koh Santepheap;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-left: 45px;
+}
+
+#subtitle-card-mainlogout {
+    color: #3B3A3A;
+    font-size: 20px;
+    font-family: Inria Serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 45px;
+}
+
+#price-card-mainlogout {
+    color: #3C0909;
+    font-size: 35px;
+    font-family: Koh Santepheap;
+    padding-left: 45px;
+    #price-mainlogout {
+        font-weight: bold;
+    }
+    #parcel-mainlogout {
+        font-weight: bold;
+    }
+}
+
+#button-card-mainlogout {
+    width: 206px;
+    height: 74px;
+    margin-top: 40px;
+    background: #3C0909;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+#text-button-card-mainlogout {
+    color: white;
+    font-size: 30px;
+    font-family: Inria Serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    padding: 19px 42px;
+}

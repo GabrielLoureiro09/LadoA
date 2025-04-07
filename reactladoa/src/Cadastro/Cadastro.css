@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inria Serif;
+}
+
+header{
+    background-color: #3C0909;
+    color: white;
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+
+}
+
+header>img{
+    width: 30px;
+    height: 30px;
+}
+
+.esquerda{
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.esquerda>p{
+    margin-top: 5px;
+}
+
+.esquerda>img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.search-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    max-width: 600px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.search-container input {
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+}
+
+.search-container input::placeholder {
+    color: #999;
+    font-style: Inria Serif;
+}
+
+.search-container .divider {
+    width: 1px;
+    height: 24px;
+    background-color: #444444;
+    margin: 0 20px;
+}
+
+.search-container .icon {
+    font-size: 18px;
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.direita{
+    display: flex;
+    font-size: 20px;
+    margin-top: 36px;
+}
+
+.direita>p{
+    display: flex;
+    margin-left: 30px;
+}
+
+.direita>img{
+    width: 24px;
+    height: 24px;
+    margin-left: 30px;
+}
+  
+.imagem-vinil {
+    background-color: white;
+    padding: 10px;
+    width: 100%; /* ou o valor exato do container */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagem-vinil {
+    width: 100%;
+    max-height: 120px; /* ou qualquer valor que você quiser */
+    height: auto;
+    object-fit: cover;
+  }
+  
+
+
+.titulo-area{
+    background-color: #3C0909;
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.container{
+    width: 882px;
+    height: 528px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 315px;
+    margin-top: 40px;
+}
+
+
+#opcoes{
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    align-items: center;
+    width: 758px;
+    height: 100px;
+}
+
+#opcoes>img{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-left: 30px;
+    overflow: visible;
+}
+
+#texto{
+    margin-left: 30px;
+}
+h2{
+    font-weight: 550;
+    color: #3C0909;
+}
+
+button{
+    width: 205px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C0909;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+button>a{
+    color: white;
+    text-decoration: none;
+}
+
+.botao-email{
+    margin-left: 70px;
+}
+
+.botao-nome{
+    margin-left: 23px;
+}
+
+.botao-senha{
+    margin-left: 170px;
+}
+

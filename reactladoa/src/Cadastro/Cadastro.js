@@ -1,29 +1,35 @@
 import './Cadastro.css';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
-import perfil from '../img/perfil.png'
 import disco from '../img/disco.png';
 import carrinho from '../img/carrinho.png';
 import lupa from '../img/lupa.png';
 
-function Header(){
+function Header() {
+    return (
+        <header id="header-container-cadastro">
+            <div id="header-left-cadastro">
+                <img id="header-disc-cadastro" src={disco} alt="Disco" />
+                <div id="header-title-cadastro">Lado A</div>
+            </div>
+
+            <div id="searchbar-wrapper-cadastro">
+                <div id="searchbar-cadastro">
+                    <img id="searchbar-zoom-cadastro" src={lupa} alt="Lupa" />
+                    <div id="searchbar-title-cadastro">Buscar seus vinis favoritos...</div>
+                </div>
+            </div>
+
+            <div id="header-right-cadastro">
+                <div id="header-perfil-cadastro">Crie a sua conta</div>
+                <div id="header-criar-cadastro">Entre</div>
+            </div>
+            <img id="header-cart-cadastro" src={carrinho} alt="Carrinho" />
+        </header>
+    );
+}
+
+export default function Cadastro(){
     return(
-        <header>
-        <div class="esquerda">
-            <img src={disco} alt="Disco"></img>
-            <p>Lado A</p>
-        </div>
-        <div class="search-container">
-            <input type="text" placeholder="Buscar seus vinis favoritos..." />
-            <div class="divider"></div>
-            <span class="icon"><img src={lupa} alt="Lu"></img></span>
-        </div>
-        <div class="direita">
-            <p>Crie sua conta</p>
-            <p>Entre</p>
-            <img src={carrinho} alt=""></img>
-        </div>
-    </header>
+        <Header />
     );
 }

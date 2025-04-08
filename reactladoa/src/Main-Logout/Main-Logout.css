@@ -6,40 +6,121 @@ header {
     width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
 }
 
-#header-title-mainlogout {
-    left: 107px; top: 58px; position: absolute; color: white; font-size: 25px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+#header-container-mainlogout {
+    width: 100%;
+    height: 150px;
+    background: #3C0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-#searchbar-mainlogout {
-    width: 740px; height: 55px; left: 282px; top: 47px; position: absolute; background: white;
-}
-
-#searchbar-title-mainlogout {
-    width: 313px; height: 21px; left: 302px; top: 63px; position: absolute; color: rgba(0, 0, 0, 0.37); font-size: 20px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
-}
-
-#line-mainlogout {
-    width: 40px; height: 0px; left: 950px; top: 55px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px rgba(0, 0, 0, 0.37) solid; outline-offset: -0.50px;
-}
-
-#header-perfil-mainlogout {
-    width: 36px; height: 36px; left: 1070px; top: 57.5px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400;
-}
-
-#header-criar-mainlogout {
-    width: 200px; height: 15px; left: 1120px; top: 66px; position: absolute; color: white; font-size: 15px; font-family: Koh Santepheap; font-weight: 400; word-wrap: break-word;
+#header-left-mainlogout {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 #header-disc-mainlogout {
-    width: 30.83px; height: 30.83px; left: 67.08px; top: 57.08px; position: absolute;
+    width: 30px;
+    height: 30px;
 }
 
-#header-cart-mainlogout {
-    width: 20px; height: 20px; left: 1339px; top: 65.5px; position: absolute;
+#header-title-mainlogout {
+    color: white;
+    font-size: 25px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+}
+
+#searchbar-wrapper-mainlogout {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar-mainlogout {
+    width: 740px;
+    height: 55px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 #searchbar-zoom-mainlogout {
-    width: 17.50px; height: 17.50px; left: 979px; top: 66px; position: absolute;
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 10px;
+}
+
+#searchbar-title-mainlogout {
+    color: rgba(0, 0, 0, 0.37);
+    font-size: 20px;
+    font-family: Koh Santepheap;
+}
+
+#header-right-mainlogout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 75px;
+}
+
+#line-mainlogout {
+    height: 40px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#header-perfil-mainlogout {
+    color: white;
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+#header-criar-mainlogout { 
+    color: white;
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    white-space: nowrap;
+}
+
+#header-cart-mainlogout {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    #header-container-mainlogout {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #header-left-mainlogout,
+    #header-right-mainlogout,
+    #searchbar-wrapper-mainlogout {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #searchbar-mainlogout {
+        width: 90%;
+        max-width: 740px;
+    }
 }
 
 #navebar-limit-mainlogout {

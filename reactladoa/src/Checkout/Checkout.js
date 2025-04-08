@@ -9,21 +9,27 @@ import lupa from '../img/lupa.png';
 
 function Header() {
     return (
-        <header>
-            <div id="header-title-checkout">Lado A</div>
-            <div id="searchbar-checkout"></div>
-            <div id="searchbar-title-checkout">Buscar seus vinis favoritos...</div>
-            <div id="line-checkout"></div>
-            <img id="header-perfil-checkout" src={perfil} alt="Perfil"></img>
-            <div id="header-criar-checkout">Olá, RAFAEL DA CRUZ</div>
-            <img id="header-disc-checkout" src={disco} alt="Disco"></img>
-            <img id="header-cart-checkout" src={carrinho} alt="Carrinho"></img>
-            <img id="searchbar-zoom-checkout" src={lupa} alt="Lupa"></img>
+        <header id="header-container-checkout">
+            <div id="header-left-checkout">
+                <img id="header-disc-checkout" src={disco} alt="Disco" />
+                <div id="header-title-checkout">Lado A</div>
+            </div>
+
+            <div id="searchbar-wrapper-checkout">
+                <div id="searchbar-checkout">
+                    <img id="searchbar-zoom-checkout" src={lupa} alt="Lupa" />
+                    <div id="searchbar-title-checkout">Buscar seus vinis favoritos...</div>
+                </div>
+            </div>
+
+            <div id="header-right-checkout">
+                <img id="header-perfil-checkout" src={perfil} alt="Perfil" />
+                <div id="header-criar-checkout">Olá, RAFAEL DA CRUZ</div>
+            </div>
+            <img id="header-cart-checkout" src={carrinho} alt="Carrinho" />
         </header>
     );
 }
-
-// ... (Header mantido como está)
 
 export default function Checkout() {
     const location = useLocation();
@@ -48,8 +54,8 @@ export default function Checkout() {
                         <h1 className="album-title">{produto.title}</h1>
                         <h2 className="subtitle">Disco de Vinil</h2>
                         <p className="price">R$ {produto.price}</p>
-                        <p className="installments">ou {produto.parcel} sem juros</p>
-                        <p className="stock">Unidades disponíveis: 7</p>
+                        <p className="installments">ou {produto.parcel} sem juros</p><br />
+                        <p className="stock">Unidades disponíveis: 7</p><br />
                         <p className="shipping">Chega em até 7 dias</p>
                         <button className="buy-button">Adicionar ao Carrinho</button>
                     </div>

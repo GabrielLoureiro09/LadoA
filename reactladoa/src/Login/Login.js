@@ -12,16 +12,24 @@ import cadeado from '../img/cadeado.png';
 
 function Header() {
     return (
-        <header>
-            <div id="header-title-login">Lado A</div>
-            <div id="searchbar-login"></div>
-            <div id="searchbar-title-login">Buscar seus vinis favoritos...</div>
-            <div id="line-login"></div>
-            <div id="header-entrar-login">Entre</div>
-            <div id="header-criar-login">Crie a sua conta</div>
-            <img id="header-disc-login" src={disco} alt="Disco" />
+        <header id="header-container-login">
+            <div id="header-left-login">
+                <img id="header-disc-login" src={disco} alt="Disco" />
+                <div id="header-title-login">Lado A</div>
+            </div>
+
+            <div id="searchbar-wrapper-login">
+                <div id="searchbar-login">
+                    <img id="searchbar-zoom-login" src={lupa} alt="Lupa" />
+                    <div id="searchbar-title-login">Buscar seus vinis favoritos...</div>
+                </div>
+            </div>
+
+            <div id="header-right-login">
+                <div id="header-perfil-login">Crie a sua conta</div>
+                <div id="header-criar-login">Entre</div>
+            </div>
             <img id="header-cart-login" src={carrinho} alt="Carrinho" />
-            <img id="searchbar-zoom-login" src={lupa} alt="Lupa" />
         </header>
     );
 }
@@ -73,7 +81,7 @@ function Container() {
                     <label>
                         <input id="senha-text-login" type="password" ref={senhaRef} name="senha" placeholder="******" />
                     </label>
-                    <div id="senha-label-login">Crie sua senha</div>
+                    <div id="senha-label-login">Insira sua senha</div>
                     <div id="senha-requisitos-login">A senha deve conter ao menos um caracter especial (! @ # $ % & *) e um tamanho de 8 dígitos</div>
                     <img id="senha-img-login" src={cadeado} alt="Ícone de senha" />
                 </div>

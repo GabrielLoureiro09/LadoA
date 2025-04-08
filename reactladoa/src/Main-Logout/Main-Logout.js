@@ -13,16 +13,24 @@ import damn from '../img/damn-kendrick-lamar.png';
 
 function Header() {
     return (
-        <header>
-            <div id="header-title-login">Lado A</div>
-            <div id="searchbar-login"></div>
-            <div id="searchbar-title-login">Buscar seus vinis favoritos...</div>
-            <div id="line-login"></div>
-            <div id="header-entrar-login">Entre</div>
-            <div id="header-criar-login">Crie a sua conta</div>
-            <img id="header-disc-login" src={disco} alt="Disco" />
-            <img id="header-cart-login" src={carrinho} alt="Carrinho" />
-            <img id="searchbar-zoom-login" src={lupa} alt="Lupa" />
+        <header id="header-container-mainlogout">
+            <div id="header-left-mainlogout">
+                <img id="header-disc-mainlogout" src={disco} alt="Disco" />
+                <div id="header-title-mainlogout">Lado A</div>
+            </div>
+
+            <div id="searchbar-wrapper-mainlogout">
+                <div id="searchbar-mainlogout">
+                    <img id="searchbar-zoom-mainlogout" src={lupa} alt="Lupa" />
+                    <div id="searchbar-title-mainlogout">Buscar seus vinis favoritos...</div>
+                </div>
+            </div>
+
+            <div id="header-right-mainlogout">
+                <div id="header-perfil-mainlogout">Crie a sua conta</div>
+                <div id="header-criar-mainlogout">Entre</div>
+            </div>
+            <img id="header-cart-mainlogout" src={carrinho} alt="Carrinho" />
         </header>
     );
 }
@@ -30,30 +38,30 @@ function Header() {
 function Navebar() {
     return (
         <div>
-            <div id="navebar-limit-mainlogin">
-                <img id="navebar-img-mainlogin" src={vinil} alt="Vinil"/>
+            <div id="navebar-limit-mainlogout">
+                <img id="navebar-img-mainlogout" src={vinil} alt="Vinil"/>
             </div>
-            <div id="navebar-mainlogin"></div>
-            <div id= "navebar-text-mainlogin">Principais Produtos:</div>
+            <div id="navebar-mainlogout"></div>
+            <div id= "navebar-text-mainlogout">Principais Produtos:</div>
         </div>
     );
 }
 
 function Card({ title, price, parcel, image, onBuyClick }) {
     return (
-        <div id="card-mainlogin">
-            <div id="layer-card-mainlogin"></div>
-            <div id="overlayer-card-mainlogin"></div>
-            <img id="image-card-mainlogin" src={image} alt={title} />
-            <div id="title-card-mainlogin">{title}</div>
-            <div id="subtitle-card-mainlogin">Disco de Vinil</div>
-            <div id="price-card-mainlogin">
-                <span id="price-mainlogin">R$ {price} </span>
-                <span id="or-mainlogin">ou </span>
-                <span id="parcel-mainlogin">{parcel}</span>
+        <div id="card-mainlogout">
+            <div id="layer-card-mainlogout"></div>
+            <div id="overlayer-card-mainlogout"></div>
+            <img id="image-card-mainlogout" src={image} alt={title} />
+            <div id="title-card-mainlogout">{title}</div>
+            <div id="subtitle-card-mainlogout">Disco de Vinil</div>
+            <div id="price-card-mainlogout">
+                <span id="price-mainlogout">R$ {price} </span>
+                <span id="or-mainlogout">ou </span>
+                <span id="parcel-mainlogout">{parcel}</span>
             </div>
-            <div id="button-card-mainlogin" onClick={onBuyClick}>
-                <div id="text-button-card-mainlogin">Comprar</div>
+            <div id="button-card-mainlogout" onClick={onBuyClick}>
+                <div id="text-button-card-mainlogout">Comprar</div>
             </div>
         </div>
     );

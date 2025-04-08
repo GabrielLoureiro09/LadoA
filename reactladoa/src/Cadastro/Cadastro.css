@@ -1,187 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Inria Serif;
+body {
+    background-color: white;
 }
 
-header{
-    background-color: #3C0909;
-    color: white;
-    display: flex;
+header {
+    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
+}
+
+#header-container-cadastro {
+    width: 100%;
     height: 150px;
-    justify-content: space-around;
-
+    background: #3C0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-header>img{
+#header-left-cadastro {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header-disc-cadastro {
     width: 30px;
     height: 30px;
 }
 
-.esquerda{
+#header-title-cadastro {
+    color: white;
     font-size: 25px;
+    font-family: Koh Santepheap;
+    font-weight: 400;
+}
+
+#searchbar-wrapper-cadastro {
+    flex: 1;
     display: flex;
-    margin-top: 30px;
+    justify-content: center;
 }
 
-.esquerda>p{
-    margin-top: 5px;
+#searchbar-cadastro {
+    width: 740px;
+    height: 55px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-.esquerda>img{
-    width: 40px;
-    height: 40px;
+#searchbar-zoom-cadastro {
+    width: 17.5px;
+    height: 17.5px;
     margin-right: 10px;
 }
 
-.search-container {
-    background-color: white;
+#searchbar-title-cadastro {
+    color: rgba(0, 0, 0, 0.37);
+    font-size: 20px;
+    font-family: Koh Santepheap;
+}
+
+#header-right-cadastro {
     display: flex;
     align-items: center;
-    padding: 8px 10px;
-    width: 80%;
+    gap: 10px;
+    margin-right: 75px;
+}
+
+#line-cadastro {
     height: 40px;
-    margin-top: 20px;
-    max-width: 600px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
-}
-
-.search-container input {
-    border: none;
-    flex: 1;
-    font-size: 16px;
-    outline: none;
-    color: #333;
-}
-
-.search-container input::placeholder {
-    color: #999;
-    font-style: Inria Serif;
-}
-
-.search-container .divider {
     width: 1px;
-    height: 24px;
-    background-color: #444444;
-    margin: 0 20px;
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
-.search-container .icon {
-    font-size: 18px;
-    color: #a0a0a0;
-    cursor: pointer;
-}
-
-.direita{
-    display: flex;
-    font-size: 20px;
-    margin-top: 36px;
-}
-
-.direita>p{
-    display: flex;
-    margin-left: 30px;
-}
-
-.direita>img{
-    width: 24px;
-    height: 24px;
-    margin-left: 30px;
-}
-  
-.imagem-vinil {
-    background-color: white;
-    padding: 10px;
-    width: 100%; /* ou o valor exato do container */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .imagem-vinil {
-    width: 100%;
-    max-height: 120px; /* ou qualquer valor que você quiser */
-    height: auto;
-    object-fit: cover;
-  }
-  
-
-
-.titulo-area{
-    background-color: #3C0909;
+#header-perfil-cadastro {
     color: white;
-    padding: 30px;
-    font-size: 25px;
-    margin-top: 20px;
-}
-.container{
-    width: 882px;
-    height: 528px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e7e7e7;
-    border-radius: 52px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 315px;
-    margin-top: 40px;
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    white-space: nowrap;
+    margin-right: 50px;
 }
 
-
-#opcoes{
-    display: flex;
-    background-color: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    align-items: center;
-    width: 758px;
-    height: 100px;
-}
-
-#opcoes>img{
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin-left: 30px;
-    overflow: visible;
-}
-
-#texto{
-    margin-left: 30px;
-}
-h2{
-    font-weight: 550;
-    color: #3C0909;
-}
-
-button{
-    width: 205px;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-    background-color: #3C0909;
+#header-criar-cadastro { 
     color: white;
-    border-radius: 10px;
-    font-size: 20px;
-    
+    font-size: 15px;
+    font-family: Koh Santepheap;
+    white-space: nowrap;
 }
 
-button>a{
-    color: white;
-    text-decoration: none;
+#header-cart-cadastro {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
 }
 
-.botao-email{
-    margin-left: 70px;
-}
+@media (max-width: 768px) {
+    #header-container-cadastro {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
 
-.botao-nome{
-    margin-left: 23px;
-}
+    #header-left-cadastro,
+    #header-right-cadastro,
+    #searchbar-wrapper-cadastro {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-.botao-senha{
-    margin-left: 170px;
+    #searchbar-cadastro {
+        width: 90%;
+        max-width: 740px;
+    }
 }
-

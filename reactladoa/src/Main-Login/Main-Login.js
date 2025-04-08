@@ -14,16 +14,24 @@ import damn from '../img/damn-kendrick-lamar.png';
 
 function Header() {
     return (
-        <header>
-            <div id="header-title-mainlogin">Lado A</div>
-            <div id="searchbar-mainlogin"></div>
-            <div id="searchbar-title-mainlogin">Buscar seus vinis favoritos...</div>
-            <div id="line-mainlogin"></div>
-            <img id="header-perfil-mainlogin" src={perfil} alt="Perfil"></img>
-            <div id="header-criar-mainlogin">Olá, RAFAEL DA CRUZ</div>
-            <img id="header-disc-mainlogin" src={disco} alt="Disco"></img>
-            <img id="header-cart-mainlogin" src={carrinho} alt="Carrinho"></img>
-            <img id="searchbar-zoom-mainlogin" src={lupa} alt="Lupa"></img>
+        <header id="header-container-mainlogin">
+            <div id="header-left-mainlogin">
+                <img id="header-disc-mainlogin" src={disco} alt="Disco" />
+                <div id="header-title-mainlogin">Lado A</div>
+            </div>
+
+            <div id="searchbar-wrapper-mainlogin">
+                <div id="searchbar-mainlogin">
+                    <img id="searchbar-zoom-mainlogin" src={lupa} alt="Lupa" />
+                    <div id="searchbar-title-mainlogin">Buscar seus vinis favoritos...</div>
+                </div>
+            </div>
+
+            <div id="header-right-mainlogin">
+                <img id="header-perfil-mainlogin" src={perfil} alt="Perfil" />
+                <div id="header-criar-mainlogin">Olá, RAFAEL DA CRUZ</div>
+            </div>
+            <img id="header-cart-mainlogin" src={carrinho} alt="Carrinho" />
         </header>
     );
 }

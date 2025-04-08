@@ -2,109 +2,131 @@ body {
     background-color: white;
   }
   
-  header {
+header {
     width: 100%;
     height: 150px;
     left: 0px;
     top: 0px;
     position: absolute;
     background: #3c0909;
-  }
+}
   
-  #header-title-login {
-    left: 107px;
-    top: 58px;
-    position: absolute;
+#header-container-login {
+    width: 100%;
+    height: 150px;
+    background: #3C0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#header-left-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header-disc-login {
+    width: 30px;
+    height: 30px;
+}
+
+#header-title-login {
     color: white;
     font-size: 25px;
     font-family: Koh Santepheap;
     font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  #searchbar-login {
+}
+
+#searchbar-wrapper-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar-login {
     width: 740px;
     height: 55px;
-    left: 282px;
-    top: 47px;
-    position: absolute;
     background: white;
-  }
-  
-  #searchbar-title-login {
-    width: 313px;
-    height: 21px;
-    left: 302px;
-    top: 63px;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#searchbar-zoom-login {
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 10px;
+}
+
+#searchbar-title-login {
     color: rgba(0, 0, 0, 0.37);
     font-size: 20px;
     font-family: Koh Santepheap;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  #line-login {
-    width: 40px;
-    height: 0px;
-    left: 950px;
-    top: 55px;
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin: top left;
-    outline: 1px rgba(0, 0, 0, 0.37) solid;
-    outline-offset: -0.5px;
-  }
-  
-  #header-entrar-login {
-    width: 41px;
-    height: 15px;
-    left: 1250px;
-    top: 66px;
-    position: absolute;
+}
+
+#header-right-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 75px;
+}
+
+#line-login {
+    height: 40px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#header-perfil-login {
     color: white;
     font-size: 15px;
     font-family: Koh Santepheap;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  #header-criar-login {
-    width: 115px;
-    height: 15px;
-    left: 1087px;
-    top: 66px;
-    position: absolute;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+#header-criar-login { 
     color: white;
     font-size: 15px;
     font-family: Koh Santepheap;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  #header-disc-login {
-    width: 30.83px;
-    height: 30.83px;
-    left: 67.08px;
-    top: 57.08px;
-    position: absolute;
-  }
-  
-  #header-cart-login {
+    white-space: nowrap;
+}
+
+#header-cart-login {
     width: 20px;
     height: 20px;
-    left: 1339px;
-    top: 65.5px;
-    position: absolute;
-  }
-  
-  #searchbar-zoom-login {
-    width: 17.5px;
-    height: 17.5px;
-    left: 979px;
-    top: 66px;
-    position: absolute;
-  }
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    #header-container-login {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #header-left-login,
+    #header-right-login,
+    #searchbar-wrapper-login {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #searchbar-login {
+        width: 90%;
+        max-width: 740px;
+    }
+}
   
   #navebar-login {
     width: 100%;

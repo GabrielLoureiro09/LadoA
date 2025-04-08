@@ -165,27 +165,37 @@ header {
   }
   
   #container-login {
-    width: 882px;
-    height: 528px;
-    left: 310px;
-    top: 427px;
-    position: absolute;
+    max-width: 900px;
+    width: 90%;
+    margin: 420px auto 100px auto;
+    padding: 40px 30px;
     background: whitesmoke;
     border-radius: 52px;
-  }
-  
-  #texto-email-login {
-    width: 425px;
-    height: 44px;
-    left: 570px;
-    top: 480px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#texto-email-login {
     color: #3c0909;
     font-size: 35px;
     font-family: Koh Santepheap;
     font-weight: 700;
-    word-wrap: break-word;
-  }
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
   
   #input-container-login {
     width: 576px;
@@ -197,13 +207,14 @@ header {
     border-radius: 9px;
   }
   
-  #email-box-login {
-    width: 758px;
-    height: 100px;
-    left: 372px;
-    top: 577px;
-    position: absolute;
+  #email-box-login,
+  #senha-box-login {
+      width: 100%;
+      max-width: 758px;
+      position: relative;
+      margin-bottom: 100px;
   }
+  
   
   #email-background-login {
     width: 758px;
@@ -301,14 +312,6 @@ header {
     word-wrap: break-word;
   }
   
-  #senha-box-login {
-    width: 758px;
-    height: 121px;
-    left: 372px;
-    top: 709px;
-    position: absolute;
-  }
-  
   #senha-background-login {
     width: 758px;
     height: 100px;
@@ -369,7 +372,6 @@ header {
     height: 74px;
     left: 647px;
     top: 856px;
-    position: absolute;
     color: white;
     font-size: 25px;
     font-family: Inria Serif;
@@ -399,3 +401,24 @@ header {
     bottom: 14px;
   }
   
+@media (max-width: 768px) {
+    #container-login {
+        margin-top: 350px;
+        padding: 30px 20px;
+    }
+
+    #texto-email-login {
+        font-size: 28px;
+    }
+
+    #email-text-login,
+    #senha-text-login {
+        font-size: 20px;
+    }
+
+    #botao-login {
+        width: 100%;
+        max-width: 300px;
+        font-size: 20px;
+    }
+}

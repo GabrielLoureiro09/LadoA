@@ -1,0 +1,124 @@
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
+}
+
+#header-container-headerlogout {
+    width: 100%;
+    height: 100px;
+    background: #3C0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#header-left-headerlogout {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header-disc-headerlogout {
+    width: 30px;
+    height: 30px;
+}
+
+#header-title-headerlogout {
+    color: white;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+#searchbar-wrapper-headerlogout {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar-headerlogout {
+    width: 740px;
+    height: 55px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#searchbar-zoom-headerlogout {
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 10px;
+}
+
+#searchbar-title-headerlogout {
+    color: rgba(0, 0, 0, 0.37);
+    font-size: 20px;
+    font-family: Koh Santepheap;
+}
+
+#header-right-headerlogout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 75px;
+}
+
+#line-headerlogout {
+    height: 40px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#header-perfil-headerlogout {
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+#header-criar-headerlogout { 
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+}
+
+#header-cart-headerlogout {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    #header-container-headerlogout {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #header-left-headerlogout,
+    #header-right-headerlogout,
+    #searchbar-wrapper-headerlogout {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #searchbar-headerlogout {
+        width: 90%;
+        max-width: 740px;
+    }
+}

@@ -2,46 +2,20 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import './Login.css';
+import Header from '../components/HeaderLogout.js';
 
-import disco from '../img/disco.png';
-import carrinho from '../img/carrinho.png';
-import lupa from '../img/lupa.png';
 import vinil from '../img/vinil.webp';
 import email from '../img/email.png';
 import cadeado from '../img/cadeado.png';
 
-function Header() {
-    return (
-        <header id="header-container-login">
-            <div id="header-left-login">
-                <img id="header-disc-login" src={disco} alt="Disco" />
-                <div id="header-title-login">Lado A</div>
-            </div>
-
-            <div id="searchbar-wrapper-login">
-                <div id="searchbar-login">
-                    <img id="searchbar-zoom-login" src={lupa} alt="Lupa" />
-                    <div id="searchbar-title-login">Buscar seus vinis favoritos...</div>
-                </div>
-            </div>
-
-            <div id="header-right-login">
-                <div id="header-perfil-login">Crie a sua conta</div>
-                <div id="header-criar-login">Entre</div>
-            </div>
-            <img id="header-cart-login" src={carrinho} alt="Carrinho" />
-        </header>
-    );
-}
-
-function Navebar() {
+function Navbar() {
     return (
         <div>
-            <div id="navebar-limit-login">
-                <img id="navebar-img-login" src={vinil} alt="Vinil" />
+            <div id="navbar-limit-login">
+                <img id="navbar-img-login" src={vinil} alt="Vinil" />
             </div>
-            <div id="navebar-login"></div>
-            <div id="navebar-text-login">Digite seu e-mail ou telefone para iniciar sessão:</div>
+            <div id="navbar-login"></div>
+            <div id="navbar-text-login">Digite seu e-mail ou telefone para iniciar sessão:</div>
         </div>
     );
 }
@@ -105,7 +79,7 @@ export default function Login() {
     return (
         <div>
             <Header />
-            <Navebar />
+            <Navbar />
             <Container />
         </div>
     );

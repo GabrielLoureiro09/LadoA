@@ -36,14 +36,14 @@ function Header() {
     );
 }
 
-function Navebar() {
+function Navbar() {
     return (
         <div>
-            <div id="navebar-limit-mainlogin">
-                <img id="navebar-img-mainlogin" src={vinil} alt="Vinil"/>
+            <div id="navbar-limit-mainlogin">
+                <img id="navbar-img-mainlogin" src={vinil} alt="Vinil"/>
             </div>
-            <div id="navebar-mainlogin"></div>
-            <div id= "navebar-text-mainlogin">Principais Produtos:</div>
+            <div id="navbar-mainlogin"></div>
+            <div id= "navbar-text-mainlogin">Principais Produtos:</div>
         </div>
     );
 }
@@ -105,7 +105,7 @@ export default function MainLogin() {
     return (
         <div>
             <Header />
-            <Navebar />
+            <Navbar />
             <div id="cards-container">
                 {produtos.map((p, index) => (
                     <Card

@@ -1,48 +1,24 @@
 import './Main-Logout.css'; 
+import Header from '../components/HeaderLogout.js';
+import '../components/HeaderLogout.css'
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import WebFont from 'webfontloader';
 
-import disco from '../img/disco.png';
-import carrinho from '../img/carrinho.png';
-import lupa from '../img/lupa.png';
 import vinil from '../img/vinil.webp';
 import swimming from '../img/swimming-macmiller.png';
 import submarine from '../img/submarine-the-marias.png';
 import smithereens from '../img/smithereens-joji.png';
 import damn from '../img/damn-kendrick-lamar.png';
 
-function Header() {
-    return (
-        <header id="header-container-mainlogout">
-            <div id="header-left-mainlogout">
-                <img id="header-disc-mainlogout" src={disco} alt="Disco" />
-                <div id="header-title-mainlogout">Lado A</div>
-            </div>
-
-            <div id="searchbar-wrapper-mainlogout">
-                <div id="searchbar-mainlogout">
-                    <img id="searchbar-zoom-mainlogout" src={lupa} alt="Lupa" />
-                    <div id="searchbar-title-mainlogout">Buscar seus vinis favoritos...</div>
-                </div>
-            </div>
-
-            <div id="header-right-mainlogout">
-                <div id="header-perfil-mainlogout">Crie a sua conta</div>
-                <div id="header-criar-mainlogout">Entre</div>
-            </div>
-            <img id="header-cart-mainlogout" src={carrinho} alt="Carrinho" />
-        </header>
-    );
-}
-
-function Navebar() {
+function Navbar() {
     return (
         <div>
-            <div id="navebar-limit-mainlogout">
-                <img id="navebar-img-mainlogout" src={vinil} alt="Vinil"/>
+            <div id="navbar-limit-mainlogout">
+                <img id="navbar-img-mainlogout" src={vinil} alt="Vinil"/>
             </div>
-            <div id="navebar-mainlogout"></div>
-            <div id= "navebar-text-mainlogout">Principais Produtos:</div>
+            <div id="navbar-mainlogout"></div>
+            <div id= "navbar-text-mainlogout">Principais Produtos:</div>
         </div>
     );
 }
@@ -57,7 +33,7 @@ function Card({ title, price, parcel, image, onBuyClick }) {
             <div id="subtitle-card-mainlogout">Disco de Vinil</div>
             <div id="price-card-mainlogout">
                 <span id="price-mainlogout">R$ {price} </span>
-                <span id="or-mainlogout">ou </span>
+                <span id="or-mainlogout">ou </span><br/>
                 <span id="parcel-mainlogout">{parcel}</span>
             </div>
             <div id="button-card-mainlogout" onClick={onBuyClick}>
@@ -101,10 +77,20 @@ export default function MainLogout() {
         window.scrollTo(0, 0);
     }, []);
 
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Poppins']
+          }
+        });
+       }, []);
+
+    
+    
     return (
         <div>
             <Header />
-            <Navebar />
+            <Navbar />
             <div id="cards-container">
                 {produtos.map((p, index) => (
                     <Card

@@ -128,7 +128,7 @@ header {
     }
 }
   
-  #navebar-login {
+  #navbar-login {
     width: 100%;
     height: 140px;
     left: 0px;
@@ -137,7 +137,7 @@ header {
     background: #3c0909;
   }
   
-  #navebar-text-login {
+  #navbar-text-login {
     left: 77px;
     top: 290px;
     position: absolute;
@@ -148,7 +148,7 @@ header {
     word-wrap: break-word;
   }
   
-  #navebar-limit-login {
+  #navbar-limit-login {
     width: 100%;
     height: 90px;
     left: 0px;
@@ -157,7 +157,7 @@ header {
     overflow: hidden;
   }
   
-  #navebar-img-login {
+  #navbar-img-login {
     width: 100%;
     left: 0px;
     top: -390px;
@@ -167,7 +167,7 @@ header {
   #container-login {
     max-width: 900px;
     width: 90%;
-    margin: 420px auto 100px auto;
+    margin: 420px auto -20px auto;
     padding: 40px 30px;
     background: whitesmoke;
     border-radius: 52px;

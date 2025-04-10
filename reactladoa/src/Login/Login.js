@@ -2,11 +2,26 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import './Login.css';
-import Header from '../components/HeaderLogout.js';
 
 import vinil from '../img/vinil.webp';
 import email from '../img/email.png';
 import cadeado from '../img/cadeado.png';
+import disco from '../img/disco.png';
+
+function Header() {
+    return (
+        <header id="header-container-login">
+            <div id="header-left-login">
+                <img id="header-disc-login" src={disco} alt="Disco" />
+                <div id="header-title-login">Lado A</div>
+            </div>
+            <div id="header-right-login">
+                <div id="header-perfil-login">Crie a sua conta</div>
+                <div id="header-criar-login">Entre</div>
+            </div>
+        </header>
+    );
+}
 
 function Navbar() {
     return (
@@ -15,7 +30,7 @@ function Navbar() {
                 <img id="navbar-img-login" src={vinil} alt="Vinil" />
             </div>
             <div id="navbar-login"></div>
-            <div id="navbar-text-login">Digite seu e-mail ou telefone para iniciar sessão:</div>
+            <div id="navbar-text-login">Preencha com seu e-mail</div>
         </div>
     );
 }
@@ -36,7 +51,6 @@ function Container() {
     return (
         <div>
             <div id="container-login">
-                <div id="texto-email-login">Preencha com seu e-mail</div>
                 <form onSubmit={handleSubmit} id="form-login">
                     <div id="email-box-login">
                         <div id="email-background-login"></div>

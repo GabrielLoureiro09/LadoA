@@ -1,168 +1,42 @@
 body {
-    background-color: white;
-  }
-  
-header {
-    width: 100%;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: #3c0909;
+  background-color: white;
 }
   
-#header-container-login {
-    width: 100%;
-    height: 150px;
-    background: #3C0909;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
+#navbar-limit-login {
+  width: 100%;
+  height: 90px;
+  left: 0px;
+  top: 100px;
+  position: absolute;
+  overflow: hidden;
 }
 
-#header-left-login {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+#navbar-img-login {
+  width: 100%;
+  left: 0px;
+  top: -390px;
+  position: absolute;
 }
 
-#header-disc-login {
-    width: 30px;
-    height: 30px;
+#navbar-login {
+  width: 100%;
+  height: 10px;
+  left: 0px;
+  top: 190px;
+  position: absolute;
+  background: #3c0909;
 }
 
-#header-title-login {
-    color: white;
-    font-size: 25px;
-    font-family: Koh Santepheap;
-    font-weight: 400;
+#navbar-text-login {
+  left: 77px;
+  top: 275px;
+  position: absolute;
+  color: black;
+  font-size: 35px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
 }
-
-#searchbar-wrapper-login {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-#searchbar-login {
-    width: 740px;
-    height: 55px;
-    background: white;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-#searchbar-zoom-login {
-    width: 17.5px;
-    height: 17.5px;
-    margin-right: 10px;
-}
-
-#searchbar-title-login {
-    color: rgba(0, 0, 0, 0.37);
-    font-size: 20px;
-    font-family: Koh Santepheap;
-}
-
-#header-right-login {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 75px;
-}
-
-#line-login {
-    height: 40px;
-    width: 1px;
-    background-color: rgba(0, 0, 0, 0.37);
-}
-
-#header-perfil-login {
-    color: white;
-    font-size: 15px;
-    font-family: Koh Santepheap;
-    white-space: nowrap;
-    margin-right: 50px;
-}
-
-#header-criar-login { 
-    color: white;
-    font-size: 15px;
-    font-family: Koh Santepheap;
-    white-space: nowrap;
-}
-
-#header-cart-login {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-}
-
-@media (max-width: 768px) {
-    #header-container-login {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    #header-left-login,
-    #header-right-login,
-    #searchbar-wrapper-login {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    #searchbar-login {
-        width: 90%;
-        max-width: 740px;
-    }
-}
-  
-  #navbar-login {
-    width: 100%;
-    height: 140px;
-    left: 0px;
-    top: 240px;
-    position: absolute;
-    background: #3c0909;
-  }
-  
-  #navbar-text-login {
-    left: 77px;
-    top: 290px;
-    position: absolute;
-    color: white;
-    font-size: 35px;
-    font-family: Koh Santepheap;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  #navbar-limit-login {
-    width: 100%;
-    height: 90px;
-    left: 0px;
-    top: 150px;
-    position: absolute;
-    overflow: hidden;
-  }
-  
-  #navbar-img-login {
-    width: 100%;
-    left: 0px;
-    top: -390px;
-    position: absolute;
-  }
   
   #container-login {
     max-width: 900px;
@@ -181,7 +55,7 @@ header {
 #texto-email-login {
     color: #3c0909;
     font-size: 35px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 700;
     text-align: center;
     width: 100%;
@@ -196,16 +70,6 @@ header {
     align-items: center;
     gap: 30px;
 }
-  
-  #input-container-login {
-    width: 576px;
-    height: 80px;
-    left: 438px;
-    top: 547px;
-    position: absolute;
-    background: #e7e7e7;
-    border-radius: 9px;
-  }
   
   #email-box-login,
   #senha-box-login {
@@ -250,23 +114,24 @@ header {
     left: 138px;
     top: 17px;
     position: absolute;
-    background: #e7e7e7;
-    border: 0;
-    font-family: Koh Santepheap;
+    background: white;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
-    font-size: 30px;
+    font-size: 25px;
     color: #3c0909;
+    border: none;
+    outline: none;
   }
-  
+
   #email-label-login {
     width: 135px;
     height: 16px;
     left: 140px;
     position: absolute;
     color: rgba(60, 8.97, 8.97, 0.6);
-    font-size: 17px;
-    font-family: Inria Serif;
+    font-size: 12px;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
   }
@@ -290,7 +155,7 @@ header {
     position: absolute;
     color: #3c0909;
     font-size: 15px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 400;
     word-wrap: break-word;
   }
@@ -306,7 +171,7 @@ header {
     flex-direction: column;
     color: rgba(0, 0, 255, 0.8);
     font-size: 15px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 400;
     text-decoration: underline;
     word-wrap: break-word;
@@ -338,13 +203,14 @@ header {
     left: 138px;
     top: 17px;
     position: absolute;
-    background: #e7e7e7;
+    background: white;
     border: 0;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
-    font-size: 30px;
+    font-size: 25px;
     color: #3c0909;
+    outline: none;
   }
   
   #senha-label-login {
@@ -353,8 +219,8 @@ header {
     left: 140px;
     position: absolute;
     color: rgba(60, 8.97, 8.97, 0.6);
-    font-size: 17px;
-    font-family: Inria Serif;
+    font-size: 12px;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
   }
@@ -368,13 +234,13 @@ header {
   }
   
   #botao-login {
-    width: 206px;
+    width: 250px;
     height: 74px;
     left: 647px;
-    top: 856px;
+    top: 856  px;
     color: white;
     font-size: 25px;
-    font-family: Inria Serif;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
     background: #3c0909;
@@ -383,22 +249,23 @@ header {
   }
   
   #email-text-login::placeholder {
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
-    bottom: 18px;
-    border: 0;
+    bottom: 16.5px;
+    border: none;
   }
   
   #senha-text-login::placeholder {
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
-    bottom: 14px;
+    bottom: 10.5px;
+    border: none;
   }
   
 @media (max-width: 768px) {

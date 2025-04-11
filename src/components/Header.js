@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import disco from '../img/disco.png';
 import carrinho from '../img/carrinho.png';
 import lupa from '../img/lupa.png';
-import './Header.css'
+import '../styles/Header.css'
 
 export default function Header() {
      useEffect(() => {
@@ -14,7 +14,31 @@ export default function Header() {
               }
             });
            }, []);
+
     if(localStorage.getItem("isLogged")){
+
+        return (
+            <header id="header-container-mainlogin">
+                <div id="header-left-mainlogin">
+                    <img id="header-disc-mainlogin" src={disco} alt="Disco" />
+                    <div id="header-title-mainlogin">Lado A</div>
+                </div>
+    
+                <div id="searchbar-wrapper-mainlogin">
+                    <div id="searchbar-mainlogin">
+                        <img id="searchbar-zoom-mainlogin" src={lupa} alt="Lupa" />
+                        <div id="searchbar-title-mainlogin">Buscar seus vinis favoritos...</div>
+                    </div>
+                </div>
+    
+                <div id="header-right-mainlogin">
+                    <img id="header-perfil-mainlogin" src={perfil} alt="Perfil" />
+                    <div id="header-criar-mainlogin">Olá, RAFAEL DA CRUZ</div>
+                </div>
+                <img id="header-cart-mainlogin" src={carrinho} alt="Carrinho" />
+            </header>
+        );
+        
         return (
                 <header id="header-container-login">
                     <div id="header-left-login">

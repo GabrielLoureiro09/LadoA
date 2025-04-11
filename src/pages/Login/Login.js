@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import './Login.css';
+import '../../styles/Login.css';
 
 import vinil from '../../img/vinil.webp';
 import email from '../../img/email.png';

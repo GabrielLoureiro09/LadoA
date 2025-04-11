@@ -1,4 +1,4 @@
-import './Cadastro.css';
+import './../../styles/Cadastro.css';
 
 import disco from '../../img/disco.png';
 import carrinho from '../../img/carrinho.png';

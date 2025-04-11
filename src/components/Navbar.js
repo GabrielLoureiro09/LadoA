@@ -1,6 +1,6 @@
 import WebFont from 'webfontloader';
 import { useEffect } from 'react';
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 import vinil from '../../public/img/vinil.webp';
 

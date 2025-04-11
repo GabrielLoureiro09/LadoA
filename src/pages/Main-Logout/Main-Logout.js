@@ -1,4 +1,4 @@
-import './Main-Logout.css'; 
+import '../../styles/Main-Logout.css'; 
 import Header from '../../components/Header';
 import '../../components/Header.css'
 import { useEffect } from 'react';

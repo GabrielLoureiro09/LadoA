@@ -1,4 +1,4 @@
-import './Checkout.css';
+import '../../styles/Checkout.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 

@@ -1,15 +1,15 @@
 import './Main-Logout.css'; 
-import Header from '../components/HeaderLogout.js';
-import '../components/HeaderLogout.css'
+import Header from '../../components/Header';
+import '../../components/Header.css'
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import WebFont from 'webfontloader';
 
-import vinil from '../img/vinil.webp';
-import swimming from '../img/swimming-macmiller.png';
-import submarine from '../img/submarine-the-marias.png';
-import smithereens from '../img/smithereens-joji.png';
-import damn from '../img/damn-kendrick-lamar.png';
+import vinil from '../../img/vinil.webp';
+import swimming from '../../img/swimming-macmiller.png';
+import submarine from '../../img/submarine-the-marias.png';
+import smithereens from '../../img/smithereens-joji.png';
+import damn from '../../img/damn-kendrick-lamar.png';
 
 function Navbar() {
     return (

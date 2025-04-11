@@ -3,25 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import './Login.css';
 
-import vinil from '../img/vinil.webp';
-import email from '../img/email.png';
-import cadeado from '../img/cadeado.png';
-import disco from '../img/disco.png';
-
-function Header() {
-    return (
-        <header id="header-container-login">
-            <div id="header-left-login">
-                <img id="header-disc-login" src={disco} alt="Disco" />
-                <div id="header-title-login">Lado A</div>
-            </div>
-            <div id="header-right-login">
-                <div id="header-perfil-login">Crie a sua conta</div>
-                <div id="header-criar-login">Entre</div>
-            </div>
-        </header>
-    );
-}
+import vinil from '../../img/vinil.webp';
+import email from '../../img/email.png';
+import cadeado from '../../img//cadeado.png';
+import Header from '../../components/Header'
 
 function Navbar() {
     return (

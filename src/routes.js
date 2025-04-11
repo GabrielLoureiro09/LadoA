@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './Login/Login.js';
-import MainLogout from './Main-Logout/Main-Logout.js'
-import MainLogin from './Main-Login/Main-Login.js';
-import Checkout from './Checkout/Checkout.js';
-import Cadastro from './Cadastro/Cadastro.js';
+import Login from './pages/Login/Login.js';
+import MainLogout from './pages/Main-Logout/Main-Logout.js'
+import MainLogin from './pages/Main-Login/Main-Login.js';
+import Checkout from './pages/Checkout/Checkout.js';
+import Cadastro from './pages/Cadastro/Cadastro.js';
+
+
 
 function App() {
     return (

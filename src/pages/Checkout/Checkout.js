@@ -2,10 +2,10 @@ import './Checkout.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import perfil from '../img/perfil.png'
-import disco from '../img/disco.png';
-import carrinho from '../img/carrinho.png';
-import lupa from '../img/lupa.png';
+import perfil from '../../img/perfil.png'
+import disco from '../../img/disco.png';
+import carrinho from '../../img/carrinho.png';
+import lupa from '../../img/lupa.png';
 
 function Header() {
     return (

@@ -1,8 +1,8 @@
 import './Cadastro.css';
 
-import disco from '../img/disco.png';
-import carrinho from '../img/carrinho.png';
-import lupa from '../img/lupa.png';
+import disco from '../../img/disco.png';
+import carrinho from '../../img/carrinho.png';
+import lupa from '../../img/lupa.png';
 
 function Header() {
     return (

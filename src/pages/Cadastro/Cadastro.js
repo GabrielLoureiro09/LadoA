@@ -1,27 +1,17 @@
-import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-import './../../styles/Cadastro.css';
+import '../../styles/Cadastro.css';
 
+import disco from '../../img/disco.png';
 import vinil from '../../img/vinil.webp';
-import email from '../../img/email.png';
-import cadeado from '../../img/cadeado.png';
-import nome from '../../img/nome.png'
-import Header from '../../components/Header'
+import perfil from '../../img/perfil1.png';
+import cadeado from '../../img/cadeado1.png';   
+import email from '../../img/email1.png';
+import Header from '../../components/Header';
+import Navbar from '../../components/Navbar';
+import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Navbar() {
-    return (
-        <div>
-            <div id="navbar-limit-cadastro">
-                <img id="navbar-img-cadastro" src={vinil} alt="Vinil" />
-            </div>
-            <div id="navbar-cadastro"></div>
-            <div id="navbar-text-cadastro">Cadastre sua conta</div>
-        </div>
-    );
-}
 
-function Container() {
+function Container(){
     const nomeRef = useRef();
     const navigate = useNavigate();
 
@@ -29,66 +19,63 @@ function Container() {
         event.preventDefault();
         const nome = nomeRef.current.value;
         
-        navigate('/mainlogin', { state: { nome } });
+    navigate('/mainlogin', { state: { nome } });
     };
-    
-    return (
-        <div>
-            <div id="container-cadastro">
-                <form onSubmit={handleSubmit} id="form-cadastro">
-                    <div id="email-box-cadastro">
-                        <div id="email-background-cadastro"></div>
-                        <div id="email-icon-cadastro"></div>
-                        <img id="email-img-cadastro" src={email} alt="Ícone de e-mail" />
-                        <label>
-                            <input id="email-text-cadastro" type="email" name="email" placeholder="rafael.cruz@gmail.com" />
-                        </label>
-                        <div id="email-label-cadastro">Insira seu e-mail</div>
-                    </div>
 
-                    <div id="nome-box-cadastro">
-                        <div id="nome-background-cadastro"></div>
-                        <div id="nome-icon-cadastro"></div>
-                        <img id="nome-img-cadastro" src={nome} alt="Ícone de usuário" />
-                        <label>
-                            <input id="nome-text-cadastro" type="text" ref={nomeRef} name="nome" placeholder="Rafael da Cruz" />
-                        </label>
-                        <div id="nome-label-cadastro">Insira seu nome</div>
-                    </div>
-
-                    <div id="senha-box-cadastro">
-                        <div id="senha-background-cadastro"></div>
-                        <div id="senha-icon-cadastro"></div>
-                        <div id="senha-input-background-cadastro"></div>
-                        <label>
-                            <input id="senha-text-cadastro" type="password" name="senha" placeholder="******" />
-                        </label>
-                        <div id="senha-label-cadastro">Insira sua senha</div>
-                        <div id="senha-requisitos-cadastro">A senha deve conter ao menos um caracter especial (! @ # $ % & *) e um tamanho de 8 dígitos</div>
-                        <img id="senha-img-cadastro" src={cadeado} alt="Ícone de senha" />
-                    </div>
-                    <button id="botao-cadastro" type="submit">
-                        Cadastrar
-                    </button>
-                </form>
-            </div>
-            <br />
-            <br />
-            <br />
+    return(
+    <div class="classe-mae">
+        <div class="descricao-pagina-cadastro">
+            <p>Preencha os dados para criar a conta.</p>
         </div>
+        <div class="container-cadastro">
+        <form onSubmit={handleSubmit} id='form-cadastro'>
+            <div class="area-cadastro">
+                <div class="imagem-senha">
+                    <img class="img-email" src={email} alt='email'/>
+                </div>
+                <div id="texto-senha">
+                    <p>Insira seu e-mail.</p>
+                    <input type='text' placeholder='rafaelbarreto@email.com' id='input-cadastro'/>
+                </div>
+            </div>
+            <div class="area-cadastro">
+                <div class="imagem-perfil">
+                    <img class="img-perfil" src={perfil} alt='email'/>
+                </div>
+                <div id="texto-senha">
+                    <p>Insira seu nome de usuário</p>
+                    <input type='text' ref={nomeRef} placeholder='Rafael Barreto' id='input-cadastro'/>
+                </div>
+            </div>
+            
+            <div class="area-cadastro">
+                <div class="imagem-senha">
+                    <img class="img-senha" src={cadeado} alt='email'/>
+                </div>
+                <div id="texto-senha">
+                    <p>Insira sua senha.</p>
+                    <input type='text' placeholder='****' id='input-cadastro'/>
+                </div>
+            </div>
+            <button id="botao-cadastro" type="submit">
+                <p>Iniciar sessão</p>
+            </button>
+        </form>
+    </div>
+    </div>
     );
 }
 
-export default function Cadastro() { 
+export default function Cadastro(){
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
-    return (
+    return(
         <div>
             <Header />
             <Navbar />
             <Container />
         </div>
+
     );
 }

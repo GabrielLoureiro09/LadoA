@@ -2,7 +2,7 @@ import WebFont from 'webfontloader';
 import { useEffect } from 'react';
 import '../styles/Navbar.css';
 
-import vinil from '../../public/img/vinil.webp';
+import vinil from '../img/vinil.webp';
 
 export default function Navbar(tamanho, texto) {
     return (

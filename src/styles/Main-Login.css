@@ -32,7 +32,7 @@ header {
 #header-title-mainlogin {
     color: white;
     font-size: 25px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: 400;
 }
 
@@ -62,7 +62,7 @@ header {
 #searchbar-title-mainlogin {
     color: rgba(0, 0, 0, 0.37);
     font-size: 20px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
 }
 
 #header-right-mainlogin {
@@ -79,14 +79,17 @@ header {
 }
 
 #header-perfil-mainlogin {
-    width: 36px;
-    height: 36px;
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+    margin-right: 50px;
 }
 
 #header-criar-mainlogin { 
     color: white;
     font-size: 15px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     white-space: nowrap;
 }
 
@@ -157,15 +160,15 @@ header {
 }
 
 #price-mainlogin {
-    color: #3C0909; font-size: 20px; font-family: Koh Santepheap; font-weight: 700; word-wrap: break-word;
+    color: #3C0909; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word;
 }
 
 #or-mainlogin {
-    color: black; font-size: 20px; font-family: Koh Santepheap; font-weight: 300; word-wrap: break-word;
+    color: black; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word;
 }
 
 #parcel-mainlogin {
-    color: #3C0909; font-size: 20px; font-family: Koh Santepheap; font-weight: 700; word-wrap: break-word;
+    color: #3C0909; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word;
 }
 
 #cards-container {
@@ -211,7 +214,7 @@ header {
 #title-card-mainlogin {
     color: #3C0909;
     font-size: 20px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
     font-weight: bold;
     margin-top: 80px;
     padding-left: 30px;
@@ -229,8 +232,11 @@ header {
 #price-card-mainlogin {
     color: #3C0909;
     font-size: 20px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
+    padding-top: 10px;
     padding-left: 30px;
+    width: 240px;
+    text-align: left;
     #price-mainlogin {
         font-weight: bold;
     }
@@ -240,7 +246,7 @@ header {
 }
 
 #button-card-mainlogin {
-    width: 190px;
+    width: 80%;
     height: 60px;
     margin-top: 25px;
     margin-bottom: -20px;
@@ -253,8 +259,8 @@ header {
 #text-button-card-mainlogin {
     color: white;
     font-size: 20px;
-    font-family: Inria Serif;
+    font-family: Poppins;
     font-weight: 700;
     word-wrap: break-word;
-    padding: 19px 53px;
+    padding: 15px 69px;
 }

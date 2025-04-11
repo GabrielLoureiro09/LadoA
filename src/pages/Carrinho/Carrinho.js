@@ -1,4 +1,4 @@
-import '../../styles/Main-Login.css'; 
+import '../../styles/Carrinho.css'; 
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,32 +13,30 @@ import Header from '../../components/Header';
 function Navbar() {
     return (
         <div>
-            <div id="navbar-limit-mainlogin">
-                <img id="navbar-img-mainlogin" src={vinil} alt="Vinil"/>
+            <div id="navbar-limit-carrinho">
+                <img id="navbar-img-carrinho" src={vinil} alt="Vinil"/>
             </div>
-            <div id="navbar-mainlogin"></div>
-            <div id= "navbar-text-mainlogin">Principais Produtos:</div>
+            <div id="navbar-carrinho"></div>
+            <div id= "navbar-text-carrinho">Produtos no carrinho:</div>
         </div>
     );
 }
 
 function Card({ title, price, parcel, image, onBuyClick }) {
     return (
-        <div id="card-mainlogin">
-            <div id="layer-card-mainlogin"></div>
-            <div id="overlayer-card-mainlogin"></div>
-            <img id="image-card-mainlogin" src={image} alt={title} />
-            <div id="title-card-mainlogin">{title}</div>
-            <div id="subtitle-card-mainlogin">Disco de Vinil</div>
-            <div id="price-card-mainlogin">
-                <span id="price-mainlogin">R$ {price} </span>
-                <span id="or-mainlogin">ou </span><br/>
-                <span id="parcel-mainlogin">{parcel}</span>
+        <div id="card-carrinho">
+            <img id="image-card-carrinho" src={image} alt={title} />
+            <div className="card-content-carrinho">
+                <div id="title-card-carrinho">{title}</div>
+                <div id="subtitle-card-carrinho">Disco de Vinil</div>
+                <div id="price-card-carrinho">
+                    <span id="price-carrinho">R$ {price}</span>
+                    <span id="or-carrinho"> ou </span>
+                    <span id="parcel-carrinho">{parcel}</span>
+                </div>
             </div>
-            <div id="button-card-mainlogin" onClick={onBuyClick}>
-                <div id="text-button-card-mainlogin">Comprar</div>
-            </div>
-        </div>
+            <div id="quantidade-card-carrinho">x 1</div>
+        </div>    
     );
 }
 
@@ -69,7 +67,7 @@ const produtos = [
     }
 ];
 
-export default function MainLogin() {
+export default function Carrinho() {
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -91,6 +89,10 @@ export default function MainLogin() {
                         onBuyClick={() => navigate('/checkout', { state: { product: p } })}
                     />
                 ))}
+            </div>
+
+            <div id="comprar-container">
+                <button id="comprar-button">Finalizar a compra</button>
             </div>
         </div>
     );

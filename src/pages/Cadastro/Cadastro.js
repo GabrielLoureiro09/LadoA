@@ -22,17 +22,14 @@ function Navbar() {
 }
 
 function Container() {
-    const emailRef = useRef();
-    const senhaRef = useRef();
     const nomeRef = useRef();
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const email = emailRef.current.value;
-        const senha = senhaRef.current.value;
+        const nome = nomeRef.current.value;
         
-        navigate('/mainlogin', { state: { email, senha } });
+        navigate('/mainlogin', { state: { nome } });
     };
     
     return (
@@ -44,7 +41,7 @@ function Container() {
                         <div id="email-icon-cadastro"></div>
                         <img id="email-img-cadastro" src={email} alt="Ícone de e-mail" />
                         <label>
-                            <input id="email-text-cadastro" type="email" ref={emailRef} name="email" placeholder="rafael.cruz@gmail.com" />
+                            <input id="email-text-cadastro" type="email" name="email" placeholder="rafael.cruz@gmail.com" />
                         </label>
                         <div id="email-label-cadastro">Insira seu e-mail</div>
                     </div>
@@ -64,16 +61,16 @@ function Container() {
                         <div id="senha-icon-cadastro"></div>
                         <div id="senha-input-background-cadastro"></div>
                         <label>
-                            <input id="senha-text-cadastro" type="password" ref={senhaRef} name="senha" placeholder="******" />
+                            <input id="senha-text-cadastro" type="password" name="senha" placeholder="******" />
                         </label>
                         <div id="senha-label-cadastro">Insira sua senha</div>
                         <div id="senha-requisitos-cadastro">A senha deve conter ao menos um caracter especial (! @ # $ % & *) e um tamanho de 8 dígitos</div>
                         <img id="senha-img-cadastro" src={cadeado} alt="Ícone de senha" />
                     </div>
-                </form>
-                <button id="botao-cadastro" type="submit">
+                    <button id="botao-cadastro" type="submit">
                         Cadastrar
-                </button>
+                    </button>
+                </form>
             </div>
             <br />
             <br />

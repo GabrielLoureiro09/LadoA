@@ -10,6 +10,8 @@ import '../styles/Header.css'
 
 export default function Header() {
     const location = useLocation();
+    const { nome } = location.state || {};
+    
      useEffect(() => {
             WebFont.load({
               google: {
@@ -20,24 +22,24 @@ export default function Header() {
 
     if(localStorage.getItem("isLogged")){
        return (
-               <header id="header-container-mainlogin">
-                   <div id="header-left-mainlogin">
-                       <img id="header-disc-mainlogin" src={disco} alt="Disco" />
-                       <div id="header-title-mainlogin">Lado A</div>
+               <header id="header-container-headerlogin">
+                   <div id="header-left-headerlogin">
+                       <img id="header-disc-headerlogin" src={disco} alt="Disco" />
+                       <div id="header-title-headerlogin">Lado A</div>
                    </div>
        
-                   <div id="searchbar-wrapper-mainlogin">
-                       <div id="searchbar-mainlogin">
-                           <img id="searchbar-zoom-mainlogin" src={lupa} alt="Lupa" />
-                           <div id="searchbar-title-mainlogin">Buscar seus vinis favoritos...</div>
+                   <div id="searchbar-wrapper-headerlogin">
+                       <div id="searchbar-headerlogin">
+                           <img id="searchbar-zoom-headerlogin" src={lupa} alt="Lupa" />
+                           <div id="searchbar-title-headerlogin">Buscar seus vinis favoritos...</div>
                        </div>
                    </div>
        
-                   <div id="header-right-mainlogin">
-                       <img id="header-perfil-mainlogin" src={perfil} alt="Perfil" />
-                       <div id="header-criar-mainlogin">Olá, RAFAEL DA CRUZ</div>
+                   <div id="header-right-headerlogin">
+                       <img id="header-perfil-headerlogin" src={perfil} alt="Perfil" />
+                       <div id="header-criar-headerlogin">Olá, {nome}</div>
                    </div>
-                   <img id="header-cart-mainlogin" src={carrinho} alt="Carrinho" />
+                   <img id="header-cart-headerlogin" src={carrinho} alt="Carrinho" />
                </header>
         );
     }

@@ -2,10 +2,6 @@ import '../../styles/Main-Login.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import perfil from '../../img/perfil.png'
-import disco from '../../img/disco.png';
-import carrinho from '../../img/carrinho.png';
-import lupa from '../../img/lupa.png';
 import vinil from '../../img/vinil.webp';
 import swimming from '../../img/swimming-macmiller.png';
 import submarine from '../../img/submarine-the-marias.png';

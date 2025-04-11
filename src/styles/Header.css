@@ -122,3 +122,189 @@ header {
         max-width: 740px;
     }
 }
+
+#header-container-login {
+    width: 100%;
+    height: 70px;
+    background: #3C0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  
+  #header-left-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  #header-disc-login {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #header-title-login {
+    color: white;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  
+  #header-right-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 75px;
+  }
+  
+  #line-login {
+    height: 40px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.37);
+  }
+  
+  #header-perfil-login {
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+    margin-right: 50px;
+  }
+  
+  #header-criar-login { 
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    #header-container-login {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+  
+    #header-left-login,
+    #header-right-login{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+  }
+
+#header-container-headerlogin {
+    width: 100%;
+    height: 100px;
+    background: #3C0909;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#header-left-headerlogin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header-disc-headerlogin {
+    width: 30px;
+    height: 30px;
+}
+
+#header-title-headerlogin {
+    color: white;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+#searchbar-wrapper-headerlogin {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#searchbar-headerlogin {
+    width: 740px;
+    height: 55px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#searchbar-zoom-headerlogin {
+    width: 17.5px;
+    height: 17.5px;
+    margin-right: 10px;
+}
+
+#searchbar-title-headerlogin {
+    color: rgba(0, 0, 0, 0.37);
+    font-size: 20px;
+    font-family: Koh Santepheap;
+}
+
+#header-right-headerlogin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 75px;
+}
+
+#header-perfil-headerlogin {
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+}
+
+#header-criar-headerlogin { 
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    white-space: nowrap;
+}
+
+#header-cart-headerlogin {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    #header-container-headerlogin {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #header-left-headerlogin,
+    #header-right-headerlogin,
+    #searchbar-wrapper-headerlogin {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #searchbar-headerlogin {
+        width: 90%;
+        max-width: 740px;
+    }
+}

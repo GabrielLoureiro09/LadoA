@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import '../../styles/Login.css';
@@ -21,16 +21,12 @@ function Navbar() {
 }
 
 function Container() {
-    const emailRef = useRef();
-    const senhaRef = useRef();
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const email = emailRef.current.value;
-        const senha = senhaRef.current.value;
         
-        navigate('/mainlogin', { state: { email, senha } });
+        navigate('/mainlogin');
     };
     
     return (
@@ -42,7 +38,7 @@ function Container() {
                         <div id="email-icon-login"></div>
                         <img id="email-img-login" src={email} alt="Ícone de e-mail" />
                         <label>
-                            <input id="email-text-login" type="email" ref={emailRef} name="email" placeholder="rafael.cruz@gmail.com" />
+                            <input id="email-text-login" type="email" name="email" placeholder="rafael.cruz@gmail.com" />
                         </label>
                         <div id="email-label-login">Insira seu e-mail</div>
                     </div>
@@ -52,16 +48,16 @@ function Container() {
                         <div id="senha-icon-login"></div>
                         <div id="senha-input-background-login"></div>
                         <label>
-                            <input id="senha-text-login" type="password" ref={senhaRef} name="senha" placeholder="******" />
+                            <input id="senha-text-login" type="password" name="senha" placeholder="******" />
                         </label>
                         <div id="senha-label-login">Insira sua senha</div>
                         <div id="senha-requisitos-login">A senha deve conter ao menos um caracter especial (! @ # $ % & *) e um tamanho de 8 dígitos</div>
                         <img id="senha-img-login" src={cadeado} alt="Ícone de senha" />
                     </div>
-                </form>
-                <button id="botao-login" type="submit">
+                    <button id="botao-login" type="submit">
                         Iniciar sessão
-                </button>
+                    </button>
+                </form>
             </div>
             <br />
             <br />

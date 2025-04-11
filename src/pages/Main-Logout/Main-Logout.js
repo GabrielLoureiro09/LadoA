@@ -1,6 +1,5 @@
 import '../../styles/Main-Logout.css'; 
 import Header from '../../components/Header';
-import '../../components/Header.css'
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import WebFont from 'webfontloader';

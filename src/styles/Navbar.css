@@ -1,17 +1,23 @@
-#navbar-mainlogin {
+#navbar-limit {
+    height: 90px;
     width: 100%;
-    height: 10px;
-    left: 0px;
-    top: 190px;
-    position: absolute;
-    background: #3c0909;
+    overflow: hidden;
 }
 
-#navbar-limit-mainlogin {
+#navbar-img {
     width: 100%;
-    height: 90px;
-    left: 0px;
-    top: 100px;
-    position: absolute;
-    overflow: hidden;
+    position: relative;
+    bottom: 450px;
+}
+
+#navbar-line {
+    width: 100%;
+    height: 10px;
+    background-color: #3C0909;
+}
+
+#navbar-text {
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 40px 0px 30px 60px;
 }

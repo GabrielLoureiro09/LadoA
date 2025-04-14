@@ -2,39 +2,44 @@ import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import '../../styles/Login.css';
+import '../../styles/Geral.css'
 
 import vinil from '../../img/vinil.webp';
 import email from '../../img/email.png';
 import cadeado from '../../img//cadeado.png';
 import Header from '../../components/Header'
 
-function Navbar() {
-    return (
-        <div>
-            <div id="navbar-limit-login">
-                <img id="navbar-img-login" src={vinil} alt="Vinil" />
-            </div>
-            <div id="navbar-login"></div>
-            <div id="navbar-text-login">Preencha com seu e-mail</div>
-        </div>
-    );
-}
+import { getClienteByMail, verifyCliente} from '../../api.js';
+import Navbar from '../../components/Navbar.js';
 
 function Container() {
     const emailRef = useRef();
     const senhaRef = useRef();
     const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
+
         const email = emailRef.current.value;
         const senha = senhaRef.current.value;
-        
-        navigate('/mainlogin', { state: { email, senha } });
+
+        const cliente = { email, senha }; // 👈 você precisa criar o objeto aqui
+        console.log(cliente)
+        const response = await verifyCliente(cliente);
+        console.log(response)
+
+        if (response) {
+            localStorage.setItem("nome", response.nome);
+            localStorage.setItem("email", response.email);
+            alert("deu certo, existe")
+            navigate('/', { state: { email, senha } });
+        } else {
+            alert("Email ou senha incorretos.");
+        }
     };
-    
+
     return (
-        <div>
+        <div id='container-content'>
             <div id="container-login">
                 <form onSubmit={handleSubmit} id="form-login">
                     <div id="email-box-login">
@@ -58,15 +63,15 @@ function Container() {
                         <div id="senha-requisitos-login">A senha deve conter ao menos um caracter especial (! @ # $ % & *) e um tamanho de 8 dígitos</div>
                         <img id="senha-img-login" src={cadeado} alt="Ícone de senha" />
                     </div>
-                </form>
-                <button id="botao-login" type="submit">
+                    
+                    <button id="botao-login" type="submit">
                         Iniciar sessão
-                </button>
+                    </button>
+                </form>
+                
             </div>
-            <br />
-            <br />
-            <br />
         </div>
+        
     );
 }
 
@@ -78,7 +83,7 @@ export default function Login() {
     return (
         <div>
             <Header />
-            <Navbar />
+            <Navbar tamanho="70px" texto="Realize seu Login"/>
             <Container />
         </div>
     );

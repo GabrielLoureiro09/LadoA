@@ -2,101 +2,10 @@ body {
     background-color: white;
 }
 
-header {
-    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
-}
-
-#header-container-mainlogout {
-    width: 100%;
-    height: 150px;
-    background: #3C0909;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-
-#header-left-mainlogout {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-#header-disc-mainlogout {
-    width: 30px;
-    height: 30px;
-}
-
-#header-title-mainlogout {
-    color: white;
-    font-size: 25px;
-    font-family: Poppins;
-    font-weight: 400;
-}
-
-#searchbar-wrapper-mainlogout {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-#searchbar-mainlogout {
-    width: 740px;
-    height: 55px;
-    background: white;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-
-#searchbar-zoom-mainlogout {
-    width: 17.5px;
-    height: 17.5px;
-    margin-right: 10px;
-}
-
-#searchbar-title-mainlogout {
-    color: rgba(0, 0, 0, 0.37);
-    font-size: 20px;
-    font-family: Poppins;
-}
-
-#header-right-mainlogout {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-right: 75px;
-}
-
 #line-mainlogout {
     height: 40px;
     width: 1px;
     background-color: rgba(0, 0, 0, 0.37);
-}
-
-#header-perfil-mainlogout {
-    color: white;
-    font-size: 15px;
-    font-family: Poppins;
-    white-space: nowrap;
-    margin-right: 50px;
-}
-
-#header-criar-mainlogout { 
-    color: white;
-    font-size: 15px;
-    font-family: Poppins;
-    white-space: nowrap;
-}
-
-#header-cart-mainlogout {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -123,52 +32,20 @@ header {
     }
 }
 
-#navbar-limit-mainlogout {
-    width: 100%;
-    height: 90px;
-    left: 0px;
-    top: 100px;
-    position: absolute;
-    overflow: hidden;
-}
-  
-#navbar-img-mainlogout {
-    width: 100%;
-    left: 0px;
-    top: -390px;
-    position: absolute;
-}
-
-#navbar-mainlogout {
-    width: 100%;
-    height: 10px;
-    left: 0px;
-    top: 190px;
-    position: absolute;
-    background: #3c0909;
-}
-  
-#navbar-text-mainlogout {
-    left: 77px;
-    top: 300px;
-    position: absolute;
+#or-mainlogout {
     color: black;
-    font-size: 35px;
+    font-size: 20px;
     font-family: Poppins;
-    font-weight: 400;
+    font-weight: 300;
     word-wrap: break-word;
 }
 
-#price-mainlogout {
-    color: #3C0909; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word;
-}
-
-#or-mainlogout {
-    color: black; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word;
-}
-
 #parcel-mainlogout {
-    color: #3C0909; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word;
+    color: #3C0909;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
 }
 
 #cards-container {
@@ -178,7 +55,7 @@ header {
     column-gap: 70px;
     row-gap: 50px;
     padding: 60px 20px;
-    margin-top: 400px;
+    margin-top: 0;
 }
 
 #card-mainlogout {
@@ -209,7 +86,7 @@ header {
     z-index: 1;
     position: relative;
     align-self: center;
-}   
+}
 
 #title-card-mainlogout {
     color: #3C0909;
@@ -237,9 +114,11 @@ header {
     padding-left: 30px;
     width: 240px;
     text-align: left;
+
     #price-mainlogout {
         font-weight: bold;
     }
+
     #parcel-mainlogout {
         font-weight: bold;
     }

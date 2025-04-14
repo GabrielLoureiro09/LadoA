@@ -6,30 +6,8 @@ import perfil from '../../img/perfil.png'
 import disco from '../../img/disco.png';
 import carrinho from '../../img/carrinho.png';
 import lupa from '../../img/lupa.png';
-
-function Header() {
-    return (
-        <header id="header-container-checkout">
-            <div id="header-left-checkout">
-                <img id="header-disc-checkout" src={disco} alt="Disco" />
-                <div id="header-title-checkout">Lado A</div>
-            </div>
-
-            <div id="searchbar-wrapper-checkout">
-                <div id="searchbar-checkout">
-                    <img id="searchbar-zoom-checkout" src={lupa} alt="Lupa" />
-                    <div id="searchbar-title-checkout">Buscar seus vinis favoritos...</div>
-                </div>
-            </div>
-
-            <div id="header-right-checkout">
-                <img id="header-perfil-checkout" src={perfil} alt="Perfil" />
-                <div id="header-criar-checkout">Olá, RAFAEL DA CRUZ</div>
-            </div>
-            <img id="header-cart-checkout" src={carrinho} alt="Carrinho" />
-        </header>
-    );
-}
+import Header from '../../components/Header'
+import '../../styles/Geral.css'
 
 export default function Checkout() {
     const location = useLocation();

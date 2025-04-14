@@ -2,101 +2,128 @@ body {
     background-color: white;
 }
 
+/* HEADER */
 header {
-    width: 100%; height: 150px; left: 0px; top: 0px; position: absolute; background: #3C0909;
+    width: 100%;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    background: #3C0909;
+    font-family: Poppins;
+    color: white;
 }
 
-#header-container-headerlogout {
+#header-container {
     width: 100%;
     height: 100px;
-    background: #3C0909;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 0 40px;
     box-sizing: border-box;
-    flex-wrap: wrap;
 }
 
-#header-left-headerlogout {
+#header-logo {
+    /*config a "logo" */
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-#header-disc-headerlogout {
+
+#header-disc {
+    /* config a imagem*/
     width: 30px;
     height: 30px;
 }
 
-#header-title-headerlogout {
+h1 {
+    /*config o titulo*/
     color: white;
     font-size: 25px;
-    font-family: Poppins;
     font-weight: 400;
 }
 
-#searchbar-wrapper-headerlogout {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
 
-#searchbar-headerlogout {
+/* SEARCH BAR */
+#searchbar {
+    display: flex;
+    align-items: center;
+
     width: 740px;
     height: 55px;
     background: white;
-    display: flex;
-    align-items: center;
+
     padding: 0 15px;
     box-sizing: border-box;
     border-radius: 4px;
 }
 
-#searchbar-zoom-headerlogout {
+#searchbar-zoom {
     width: 17.5px;
     height: 17.5px;
     margin-right: 10px;
 }
 
-#searchbar-title-headerlogout {
-    color: rgba(0, 0, 0, 0.37);
+#searchbar-title {
+    color: rgba(0, 0, 0, 0.70);
     font-size: 20px;
-    font-family: Koh Santepheap;
+    font-family: Poppins;
+
+    border: none;
+    outline: none;
+    width: 90%;
+
+    word-wrap: break-word;
 }
 
-#header-right-headerlogout {
+#searchbar-title::placeholder {
+    color: rgba(0, 0, 0, 0.37);
+}
+
+
+/*LOGIN e CARRINHO*/
+#header-login {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 75px;
+    /* margin-right: 50px; */
 }
 
-#line-headerlogout {
-    height: 40px;
-    width: 1px;
-    background-color: rgba(0, 0, 0, 0.37);
-}
-
-#header-perfil-headerlogout {
+#header-perfil {
     color: white;
     font-size: 15px;
     font-family: Poppins;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin-right: 50px;
 }
 
-#header-criar-headerlogout { 
+#header-criar {
+    color: white;
+    font-size: 15px;
+    /* white-space: nowrap; */
+}
+
+#header-cart {
+    width: 20px;
+    height: 20px;
+    margin-left: 65px;
+}
+
+/*is logged*/
+#profile {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-perfil-image {
     color: white;
     font-size: 15px;
     font-family: Poppins;
-    white-space: nowrap;
-}
-
-#header-cart-headerlogout {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
 }
 
 @media (max-width: 768px) {

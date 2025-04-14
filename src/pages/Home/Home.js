@@ -1,46 +1,30 @@
-import '../../styles/Main-Login.css'; 
+import '../../styles/Home.css'; 
+import Header from '../../components/Header.js';
+import Navbar from '../../components/Navbar.js';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import WebFont from 'webfontloader';
 
-import perfil from '../../img/perfil.png'
-import disco from '../../img/disco.png';
-import carrinho from '../../img/carrinho.png';
-import lupa from '../../img/lupa.png';
-import vinil from '../../img/vinil.webp';
 import swimming from '../../img/swimming-macmiller.png';
 import submarine from '../../img/submarine-the-marias.png';
 import smithereens from '../../img/smithereens-joji.png';
 import damn from '../../img/damn-kendrick-lamar.png';
 
-import Header from '../../components/Header';
-
-function Navbar() {
-    return (
-        <div>
-            <div id="navbar-limit-mainlogin">
-                <img id="navbar-img-mainlogin" src={vinil} alt="Vinil"/>
-            </div>
-            <div id="navbar-mainlogin"></div>
-            <div id= "navbar-text-mainlogin">Principais Produtos:</div>
-        </div>
-    );
-}
-
 function Card({ title, price, parcel, image, onBuyClick }) {
     return (
-        <div id="card-mainlogin">
-            <div id="layer-card-mainlogin"></div>
-            <div id="overlayer-card-mainlogin"></div>
-            <img id="image-card-mainlogin" src={image} alt={title} />
-            <div id="title-card-mainlogin">{title}</div>
-            <div id="subtitle-card-mainlogin">Disco de Vinil</div>
-            <div id="price-card-mainlogin">
-                <span id="price-mainlogin">R$ {price} </span>
-                <span id="or-mainlogin">ou </span>
-                <span id="parcel-mainlogin">{parcel}</span>
+        <div id="card-mainlogout">
+            <div id="layer-card-mainlogout"></div>
+            <div id="overlayer-card-mainlogout"></div>
+            <img id="image-card-mainlogout" src={image} alt={title} />
+            <div id="title-card-mainlogout">{title}</div>
+            <div id="subtitle-card-mainlogout">Disco de Vinil</div>
+            <div id="price-card-mainlogout">
+                <span id="price-mainlogout">R$ {price} </span>
+                <span id="or-mainlogout">ou </span><br/>
+                <span id="parcel-mainlogout">{parcel}</span>
             </div>
-            <div id="button-card-mainlogin" onClick={onBuyClick}>
-                <div id="text-button-card-mainlogin">Comprar</div>
+            <div id="button-card-mainlogout" onClick={onBuyClick}>
+                <div id="text-button-card-mainlogout">Comprar</div>
             </div>
         </div>
     );
@@ -73,17 +57,27 @@ const produtos = [
     }
 ];
 
-export default function MainLogin() {
+export default function Home() {
     const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
+    useEffect(() => {
+        WebFont.load({
+          google: {
+            families: ['Poppins']
+          }
+        });
+       }, []);
+
+    
+    
     return (
         <div>
             <Header />
-            <Navbar />
+            <Navbar tamanho="90px" texto="Principais Produtos"  />
             <div id="cards-container">
                 {produtos.map((p, index) => (
                     <Card
@@ -92,8 +86,8 @@ export default function MainLogin() {
                         price={p.price}
                         parcel={p.parcel}
                         image={p.image}
-                        onBuyClick={() => navigate('/checkout', { state: { product: p } })}
-                    />
+                        onBuyClick={() => navigate('/login')}
+                    />  
                 ))}
             </div>
         </div>

@@ -8,18 +8,9 @@ import email from '../../img/email.png';
 import cadeado from '../../img/cadeado.png';
 import nome from '../../img/nome.png'
 import Header from '../../components/Header'
+import { createUser} from '../../api.js';
 
-function Navbar() {
-    return (
-        <div>
-            <div id="navbar-limit-cadastro">
-                <img id="navbar-img-cadastro" src={vinil} alt="Vinil" />
-            </div>
-            <div id="navbar-cadastro"></div>
-            <div id="navbar-text-cadastro">Cadastre sua conta</div>
-        </div>
-    );
-}
+import Navbar from '../../components/Navbar.js';
 
 function Container() {
     const emailRef = useRef();
@@ -27,18 +18,49 @@ function Container() {
     const nomeRef = useRef();
     const navigate = useNavigate();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        const email = emailRef.current.value;
-        const senha = senhaRef.current.value;
+    
+        const nome = emailRef.current.value.trim();
+        const email = emailRef.current.value.trim();
+        const senha = senhaRef.current.value.trim();
+    
+        if (!email || !senha) {
+          alert("Preencha todos os campos!");
+          return;
+        }
+    
+        const user = {
+          nome,
+          email,
+          telefone: "987",
+          senha
+        };
         
-        navigate('/mainlogin', { state: { email, senha } });
-    };
+        const response = await createUser(user);
+
+        if (response) {
+          alert("Usuário criado com sucesso!");
+          navigate('/mainlogin', { state: { email, senha } });
+        } else {
+          alert("Erro ao criar usuário.");
+        }
+      };
     
     return (
-        <div>
+        <div id='container-content'>
             <div id="container-cadastro">
                 <form onSubmit={handleSubmit} id="form-cadastro">
+                <div id="nome-box-cadastro">
+                        <div id="nome-background-cadastro"></div>
+                        <div id="nome-icon-cadastro"></div>
+                        <img id="nome-img-cadastro" src={nome} alt="Ícone de usuário" />
+                        <label>
+                            <input id="nome-text-cadastro" type="text" ref={nomeRef} name="nome" placeholder="Rafael da Cruz" />
+                        </label>
+                        <div id="nome-label-cadastro">Insira seu nome</div>
+                    </div>
+
                     <div id="email-box-cadastro">
                         <div id="email-background-cadastro"></div>
                         <div id="email-icon-cadastro"></div>
@@ -47,16 +69,6 @@ function Container() {
                             <input id="email-text-cadastro" type="email" ref={emailRef} name="email" placeholder="rafael.cruz@gmail.com" />
                         </label>
                         <div id="email-label-cadastro">Insira seu e-mail</div>
-                    </div>
-
-                    <div id="nome-box-cadastro">
-                        <div id="nome-background-cadastro"></div>
-                        <div id="nome-icon-cadastro"></div>
-                        <img id="nome-img-cadastro" src={nome} alt="Ícone de usuário" />
-                        <label>
-                            <input id="nome-text-cadastro" type="text" ref={nomeRef} name="nome" placeholder="Rafael da Cruz" />
-                        </label>
-                        <div id="nome-label-cadastro">Insira seu nome</div>
                     </div>
 
                     <div id="senha-box-cadastro">
@@ -75,9 +87,6 @@ function Container() {
                         Cadastrar
                 </button>
             </div>
-            <br />
-            <br />
-            <br />
         </div>
     );
 }
@@ -90,7 +99,7 @@ export default function Cadastro() {
     return (
         <div>
             <Header />
-            <Navbar />
+             <Navbar tamanho="90px" texto="Realize seu Cadastro"  />
             <Container />
         </div>
     );

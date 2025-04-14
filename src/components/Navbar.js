@@ -1,17 +1,17 @@
 import WebFont from 'webfontloader';
 import { useEffect } from 'react';
 import '../styles/Navbar.css';
+import '../styles/Geral.css'
+import vinil from '../img/vinil.webp';
 
-import vinil from '../../public/img/vinil.webp';
-
-export default function Navbar(tamanho, texto) {
+export default function Navbar({ tamanho, texto }) {
     return (
         <div>
-            <div id="navbar-limit-login">
-                <img id="navbar-img-login" style={{ height: tamanho }} src={vinil} alt="Vinil" />
+            <div id="navbar-limit" style={{height: tamanho}} >
+                <img id="navbar-img" src={vinil} alt="Vinil" />
             </div>
-            <div id="navbar-login"></div>
-            <div id="navbar-text-login">{texto}</div>
+            <div id="navbar-line"></div>
+            <div id="navbar-text">{texto}</div>
         </div>
     );
 }

@@ -2,6 +2,7 @@ body {
   background-color: white;
 }
 
+/*
 body {
   background-color: white;
 }
@@ -67,296 +68,267 @@ header {
   font-family: Poppins;
   white-space: nowrap;
 }
-
+*/
 @media (max-width: 768px) {
   #header-container-login {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      padding: 20px;
-      gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
   }
 
   #header-left-login,
-  #header-right-login{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+  #header-right-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
-  
-#navbar-limit-login {
+
+#container-content {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container-login {
+  max-width: 900px;
+  width: 90%;
+  /* margin: 240px auto -50px auto; */
+  padding: 40px 30px;
+  border-radius: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#form-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#email-box-login,
+#senha-box-login {
+  width: 100%;
+  max-width: 758px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+
+#email-background-login {
+  width: 758px;
+  height: 100px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#email-icon-login {
+  width: 70px;
   height: 70px;
-  left: 0px;
-  top: 70px;
+  left: 43px;
+  top: 15px;
   position: absolute;
-  overflow: hidden;
+  background: rgba(217, 217, 217, 0);
+  border-radius: 9999px;
+  border: 1px rgba(0, 0, 0, 0.37) solid;
 }
 
-#navbar-img-login {
-  width: 100%;
-  left: 0px;
-  top: -390px;
+#email-img-login {
+  width: 40.05px;
+  height: 32px;
+  left: 59.15px;
+  top: 35px;
   position: absolute;
 }
 
-#navbar-login {
-  width: 100%;
-  height: 10px;
-  left: 0px;
-  top: 140px;
+#email-text-login {
+  width: 564px;
+  height: 68px;
+  left: 138px;
+  top: 17px;
   position: absolute;
-  background: #3c0909;
-}
-
-#navbar-text-login {
-  left: 30px;
-  top: 200px;
-  position: absolute;
-  color: black;
+  background: white;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
   font-size: 25px;
+  color: #3c0909;
+  border: none;
+  outline: none;
+}
+
+#email-label-login {
+  width: 135px;
+  height: 16px;
+  left: 140px;
+  position: absolute;
+  color: rgba(60, 8.97, 8.97, 0.6);
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+#email-icon-login {
+  width: 70px;
+  height: 70px;
+  left: 43px;
+  top: 15px;
+  position: absolute;
+  background: rgba(217, 217, 217, 0);
+  border-radius: 9999px;
+  border: 1px rgba(0, 0, 0, 0.37) solid;
+}
+
+#cadastro-text-login {
+  width: 196px;
+  height: 15px;
+  left: 504px;
+  top: 980px;
+  position: absolute;
+  color: #3c0909;
+  font-size: 15px;
   font-family: Poppins;
   font-weight: 400;
   word-wrap: break-word;
 }
-  
-#container-login {
-    max-width: 900px;
-    width: 90%;
-    margin: 240px auto -50px auto;
-    padding: 40px 30px;
-    border-radius: 52px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+
+#cadastro-link-login {
+  width: 230px;
+  height: 69px;
+  left: 706px;
+  top: 955px;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 255, 0.8);
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  text-decoration: underline;
+  word-wrap: break-word;
 }
 
-#form-login {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+#senha-background-login {
+  width: 758px;
+  height: 100px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
-  
-  #email-box-login,
-  #senha-box-login {
-      width: 100%;
-      max-width: 758px;
-      position: relative;
-      margin-bottom: 100px;
-  }
-  
-  
-  #email-background-login {
-    width: 758px;
-    height: 100px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-  }
-  
-  #email-icon-login {
-    width: 70px;
-    height: 70px;
-    left: 43px;
-    top: 15px;
-    position: absolute;
-    background: rgba(217, 217, 217, 0);
-    border-radius: 9999px;
-    border: 1px rgba(0, 0, 0, 0.37) solid;
-  }
-  
-  #email-img-login {
-    width: 40.05px;
-    height: 32px;
-    left: 59.15px;
-    top: 35px;
-    position: absolute;
-  }
-  
-  #email-text-login {
-    width: 564px;
-    height: 68px;
-    left: 138px;
-    top: 17px;
-    position: absolute;
-    background: white;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    font-size: 25px;
-    color: #3c0909;
-    border: none;
-    outline: none;
-  }
 
-  #email-label-login {
-    width: 135px;
-    height: 16px;
-    left: 140px;
-    position: absolute;
-    color: rgba(60, 8.97, 8.97, 0.6);
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-  }
+#senha-icon-login {
+  width: 70px;
+  height: 70px;
+  left: 43px;
+  top: 15px;
+  position: absolute;
+  background: rgba(217, 217, 217, 0);
+  border-radius: 9999px;
+  border: 1px rgba(0, 0, 0, 0.37) solid;
+}
 
-  #email-icon-login {
-    width: 70px;
-    height: 70px;
-    left: 43px;
-    top: 15px;
-    position: absolute;
-    background: rgba(217, 217, 217, 0);
-    border-radius: 9999px;
-    border: 1px rgba(0, 0, 0, 0.37) solid;
-  }
-  
-  #cadastro-text-login {
-    width: 196px;
-    height: 15px;
-    left: 504px;
-    top: 980px;
-    position: absolute;
-    color: #3c0909;
-    font-size: 15px;
-    font-family: Poppins;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  #cadastro-link-login {
-    width: 230px;
-    height: 69px;
-    left: 706px;
-    top: 955px;
-    position: absolute;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    color: rgba(0, 0, 255, 0.8);
-    font-size: 15px;
-    font-family: Poppins;
-    font-weight: 400;
-    text-decoration: underline;
-    word-wrap: break-word;
-  }
-  
-  #senha-background-login {
-    width: 758px;
-    height: 100px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-  }
-  
-  #senha-icon-login {
-    width: 70px;
-    height: 70px;
-    left: 43px;
-    top: 15px;
-    position: absolute;
-    background: rgba(217, 217, 217, 0);
-    border-radius: 9999px;
-    border: 1px rgba(0, 0, 0, 0.37) solid;
-  }
-  
-  #senha-text-login {
-    width: 564px;
-    height: 68px;
-    left: 138px;
-    top: 17px;
-    position: absolute;
-    background: white;
-    border: 0;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    font-size: 25px;
-    color: #3c0909;
-    outline: none;
-  }
-  
-  #senha-label-login {
-    width: 135px;
-    height: 16px;
-    left: 140px;
-    position: absolute;
-    color: rgba(60, 8.97, 8.97, 0.6);
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-  }
-  
-  #senha-img-login {
-    width: 29.04px;
-    height: 38px;
-    left: 65px;
-    top: 31px;
-    position: absolute;
-  }
-  
-  #botao-login {
-    width: 250px;
-    height: 74px;
-    left: 647px;
-    top: 856px;
-    color: white;
-    font-size: 25px;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    background: #3c0909;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  #email-text-login::placeholder {
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    font-size: 25px;
-    position: absolute;
-    bottom: 16.5px;
-    border: none;
-  }
-  
-  #senha-text-login::placeholder {
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    font-size: 25px;
-    position: absolute;
-    bottom: 10.5px;
-    border: none;
-  }
-  
+#senha-text-login {
+  width: 564px;
+  height: 68px;
+  left: 138px;
+  top: 17px;
+  position: absolute;
+  background: white;
+  border: 0;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+  font-size: 25px;
+  color: #3c0909;
+  outline: none;
+}
+
+#senha-label-login {
+  width: 135px;
+  height: 16px;
+  left: 140px;
+  position: absolute;
+  color: rgba(60, 8.97, 8.97, 0.6);
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+#senha-img-login {
+  width: 29.04px;
+  height: 38px;
+  left: 65px;
+  top: 31px;
+  position: absolute;
+}
+
+#botao-login {
+  width: 250px;
+  height: 74px;
+  left: 647px;
+  top: 856px;
+  color: white;
+  font-size: 25px;
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+  background: #3c0909;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#email-text-login::placeholder {
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+  font-size: 25px;
+  position: absolute;
+  bottom: 16.5px;
+  border: none;
+}
+
+#senha-text-login::placeholder {
+  font-family: Poppins;
+  font-weight: 700;
+  word-wrap: break-word;
+  font-size: 25px;
+  position: absolute;
+  bottom: 10.5px;
+  border: none;
+}
+
 @media (max-width: 768px) {
-    #container-login {
-        margin-top: 350px;
-        padding: 30px 20px;
-    }
+  #container-login {
+    margin-top: 350px;
+    padding: 30px 20px;
+  }
 
-    #texto-email-login {
-        font-size: 28px;
-    }
+  #texto-email-login {
+    font-size: 28px;
+  }
 
-    #email-text-login,
-    #senha-text-login {
-        font-size: 20px;
-    }
+  #email-text-login,
+  #senha-text-login {
+    font-size: 20px;
+  }
 
-    #botao-login {
-        width: 100%;
-        max-width: 300px;
-        font-size: 20px;
-    }
+  #botao-login {
+    width: 100%;
+    max-width: 300px;
+    font-size: 20px;
+  }
 }
